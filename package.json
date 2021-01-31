@@ -1,38 +1,44 @@
 {
-  "name": "getitwrite",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.3",
-    "@testing-library/user-event": "^12.6.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
-  },
+  "name": "project3-starter-auth",
+  "version": "1.0.0",
+  "description": "Project 3 starter with authentication",
+  "main": "server/server.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server/server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "seed": "node server/scripts/seedDB.js",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alperg/project3-starter-auth.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alperg/project3-starter-auth/issues"
+  },
+  "homepage": "https://github.com/alperg/project3-starter-auth#readme",
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcrypt": "^3.0.2",
+    "bcryptjs": "^2.4.3",
+    "connect-mongo": "^2.0.1",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.3.4",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
   }
 }
