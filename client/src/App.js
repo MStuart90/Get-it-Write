@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Header, Container, Row, Col } from 'react-bootstrap';
+import EditableText from './components/EditableText/EditableText';
 
 class App extends Component {
   render() {
@@ -15,7 +16,7 @@ class App extends Component {
           </header>
           <article>
             <Row className='rows'>
-              <Col className='columns'>Editable Text Area</Col>
+              <Col className='editText'> <EditableText /> </Col>
               <Col className='columns'>Category, and other components</Col>
             </Row>
           </article>
