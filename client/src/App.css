@@ -13,3 +13,11 @@
 .textArea{
   border: 1px solid rgb(88, 88, 88);
 }
+
+.navBar{
+  background-color: rgb(129, 131, 252);
+}
+
+.footer{
+  background-color: rgb(121, 191, 248);
+}
