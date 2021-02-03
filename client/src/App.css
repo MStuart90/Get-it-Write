@@ -6,3 +6,10 @@
   border: 2px solid black;
 }
 
+.editText{
+  background-color: rgb(206, 204, 204);
+
+}
+.textArea{
+  border: 3px solid rgb(226, 28, 28);
+}
