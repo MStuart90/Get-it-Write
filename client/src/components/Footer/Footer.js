@@ -1,8 +1,14 @@
-import React from "react";
+import React, { Component } from 'react';
 
 
+class Footer extends Component {
+    render() {
+  return (
+    <>
+    </>
+  );
+}
+}
 
 
-
-
-export default Categories;
+export default Footer;

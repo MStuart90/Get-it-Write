@@ -4,6 +4,7 @@ import './App.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import EditableText from './components/EditableText/EditableText';
 import NavBar from './components/NavBar/NavBar';
+import Footer from './components/Footer/Footer';
 
 class App extends Component {
   render() {
@@ -21,9 +22,9 @@ class App extends Component {
               <Col className='columns'>Category, and other components</Col>
             </Row>
           </article>
-          <footer className='footer'>
+          <footer>
             <Row>
-              <Col>Footer Goes Here</Col>
+              <Col className='footer'><Footer />Footer Goes Here</Col>
             </Row>
           </footer>
       </Container>
