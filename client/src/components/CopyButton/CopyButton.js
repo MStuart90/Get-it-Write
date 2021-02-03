@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import "./styles.css";
 
-class CopyButton extends Component {
-    render() {
- 
+export default function App() {
+    
     const [inputValue, setInputValue] = useState("");
 
     return (
-        <div>
+        <div className="App">
         <input 
         type="text" 
         value={inputValue} 
@@ -20,6 +19,5 @@ class CopyButton extends Component {
       </div>  
        );
 }
-}
 
-export default CopyButton;
+// export default CopyButton;
