@@ -1,10 +1,17 @@
-#toggler {
+.categoriesBtn {
   width: 100%;
-  margin-bottom: 0.5rem;
 }
 
-#categoriesCard {
-  background-color: #e8e8e8;
+.categoriesRow {
+  margin-bottom: 1rem;
+}
+
+#proCategoriesCard,
+#casualCategoriesCard {
+  background-color: #d6e8eb;
+  width: 100%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 input[type="radio"]:after {
@@ -33,4 +40,13 @@ input[type="radio"]:checked:after {
   display: inline-block;
   visibility: visible;
   border: 2px solid white;
+}
+
+.disabledCategory {
+  background-color: #ced3d4 !important;
+}
+
+.disabledBtn {
+  background-color: slategray !important;
+  border-color: slategray !important;
 }
