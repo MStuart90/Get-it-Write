@@ -1,8 +1,9 @@
 
 import React, { Component } from 'react';
 import './App.css';
-import { Header, Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import EditableText from './components/EditableText/EditableText';
+import NavBar from './components/NavBar/NavBar';
 
 class App extends Component {
   render() {
@@ -11,12 +12,12 @@ class App extends Component {
        <Container>
           <header className='header'>
             <Row>
-              <Col>Header Goes Here</Col>
+              <Col className='NavBar'><NavBar />Nav bar Goes Here</Col>
             </Row>
           </header>
           <article>
             <Row className='rows'>
-              <Col className='editText'> <EditableText /> </Col>
+              <Col className='editText'><EditableText /></Col>
               <Col className='columns'>Category, and other components</Col>
             </Row>
           </article>
