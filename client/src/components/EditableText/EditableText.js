@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Form, FormGroup, Label, Input} from 'reactstrap';
-// import {CopyToClipboard} from 'react-copy-to-clipboard';
+import CopyButton from './components/CopyButton/CopyButton';
 
 
 class EditableText extends Component {
@@ -12,12 +12,8 @@ class EditableText extends Component {
         <hr></hr>
         <Input className="textArea" type="textarea" name="text" id="exampleText" />
       </FormGroup>
-
-      {/* <CopyToClipboard text="Hello!"> */}
-      <Button variant="primary" size="sm">Copy to clipboard</Button>{' '}
+      <CopyButton />
       <Button variant="primary" size="sm">Share</Button>{' '}
-      {/* </CopyToClipboard> */}
-
     </Form>
   );
 }

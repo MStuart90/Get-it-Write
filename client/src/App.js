@@ -13,7 +13,7 @@ class App extends Component {
        <Container>
           <header className='header'>
             <Row>
-              <Col className='NavBar'><NavBar />Nav bar Goes Here</Col>
+              <Col className='navBar'><NavBar />Nav bar Goes Here</Col>
             </Row>
           </header>
           <article>
