@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Button, Form, FormGroup, Label, Input, FormText} from 'reactstrap';
-import {CopyToClipboard} from 'react-copy-to-clipboard';
+import { Button, Form, FormGroup, Label, Input} from 'reactstrap';
+// import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 
 class EditableText extends Component {

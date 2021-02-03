@@ -1,10 +1,14 @@
-import React from "react";
+import React, { Component } from 'react';
 
 
+class NavBar extends Component {
+    render() {
+  return (
+    <>
+    </>
+  );
+}
+}
 
 
-
-
-
-
-export default Categories;
+export default NavBar;
