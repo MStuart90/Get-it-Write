@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import EditableText from './components/EditableText/EditableText';
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
+import Categories from './components/Categories/Categories';
 
 class App extends Component {
   render() {
@@ -19,7 +20,7 @@ class App extends Component {
           <article>
             <Row className='rows'>
               <Col className='editText'><EditableText /></Col>
-              <Col className='columns'>Category, and other components</Col>
+              <Col className='columns'><Categories /></Col>
             </Row>
           </article>
           <footer>

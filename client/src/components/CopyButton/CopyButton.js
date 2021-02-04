@@ -21,3 +21,6 @@ export default function App() {
 }
 
 // export default CopyButton;
+//https://dev.to/dipakkr/how-to-pass-data-from-one-component-to-other-component-in-react-35i2
+
+// How to Pass Data From One Component to Other Component in React?
