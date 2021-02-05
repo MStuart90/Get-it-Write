@@ -1,0 +1,196 @@
+#H2_1 {
+    block-size: 16px;
+    border-block-end-color: rgba(58, 58, 58, 0.1);
+    border-block-end-style: solid;
+    border-block-end-width: 1px;
+    border-block-start-color: rgba(58, 58, 58, 0.1);
+    border-inline-end-color: rgba(58, 58, 58, 0.1);
+    border-inline-start-color: rgba(58, 58, 58, 0.1);
+    caret-color: rgb(52, 79, 113);
+    color: rgb(52, 79, 113);
+    column-rule-color: rgb(52, 79, 113);
+    height: 16px;
+    inline-size: 643.609px;
+    margin-block-end: 7px;
+    margin-block-start: 0px;
+    min-block-size: auto;
+    min-height: auto;
+    min-inline-size: auto;
+    min-width: auto;
+    padding-block-end: 4px;
+    perspective-origin: 321.797px 10.5px;
+    tab-size: 4;
+    text-decoration: none solid rgb(52, 79, 113);
+    text-overflow: ellipsis;
+    text-size-adjust: 100%;
+    text-transform: uppercase;
+    transform-origin: 321.805px 10.5px;
+    user-select: none;
+    white-space: nowrap;
+    width: 643.609px;
+    border-top: 0px none rgba(58, 58, 58, 0.1);
+    border-right: 0px none rgba(58, 58, 58, 0.1);
+    border-bottom: 1px solid rgba(58, 58, 58, 0.1);
+    border-left: 0px none rgba(58, 58, 58, 0.1);
+    font: 600 12.8px / 16px "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sansSerif;
+    margin: 0px 0px 7px;
+    outline: rgb(52, 79, 113) none 0px;
+    overflow: hidden;
+    padding: 0px 0px 4px;
+}/*#H2_1*/
+
+#H2_1:after {
+    border-block-end-color: rgb(52, 79, 113);
+    border-block-start-color: rgb(52, 79, 113);
+    border-inline-end-color: rgb(52, 79, 113);
+    border-inline-start-color: rgb(52, 79, 113);
+    caret-color: rgb(52, 79, 113);
+    color: rgb(52, 79, 113);
+    column-rule-color: rgb(52, 79, 113);
+    tab-size: 4;
+    text-decoration: none solid rgb(52, 79, 113);
+    text-size-adjust: 100%;
+    text-transform: uppercase;
+    user-select: none;
+    white-space: nowrap;
+    border: 0px none rgb(52, 79, 113);
+    font: 600 12.8px / 16px "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sansSerif;
+    outline: rgb(52, 79, 113) none 0px;
+}/*#H2_1:after*/
+
+#H2_1:before {
+    border-block-end-color: rgb(52, 79, 113);
+    border-block-start-color: rgb(52, 79, 113);
+    border-inline-end-color: rgb(52, 79, 113);
+    border-inline-start-color: rgb(52, 79, 113);
+    caret-color: rgb(52, 79, 113);
+    color: rgb(52, 79, 113);
+    column-rule-color: rgb(52, 79, 113);
+    tab-size: 4;
+    text-decoration: none solid rgb(52, 79, 113);
+    text-size-adjust: 100%;
+    text-transform: uppercase;
+    user-select: none;
+    white-space: nowrap;
+    border: 0px none rgb(52, 79, 113);
+    font: 600 12.8px / 16px "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sansSerif;
+    outline: rgb(52, 79, 113) none 0px;
+}/*#H2_1:before*/
+
+#SPAN_2 {
+    border-block-end-color: rgb(52, 79, 113);
+    border-block-start-color: rgb(52, 79, 113);
+    border-inline-end-color: rgb(52, 79, 113);
+    border-inline-start-color: rgb(52, 79, 113);
+    caret-color: rgb(52, 79, 113);
+    color: rgb(52, 79, 113);
+    column-rule-color: rgb(52, 79, 113);
+    perspective-origin: 0px 0px;
+    tab-size: 4;
+    text-decoration: none solid rgb(52, 79, 113);
+    text-overflow: ellipsis;
+    text-size-adjust: 100%;
+    text-transform: uppercase;
+    transform-origin: 0px 0px;
+    user-select: none;
+    white-space: nowrap;
+    border: 0px none rgb(52, 79, 113);
+    font: 600 12.8px / 16px "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sansSerif;
+    outline: rgb(52, 79, 113) none 0px;
+    overflow: hidden;
+}/*#SPAN_2*/
+
+#SPAN_2:after {
+    border-block-end-color: rgb(52, 79, 113);
+    border-block-start-color: rgb(52, 79, 113);
+    border-inline-end-color: rgb(52, 79, 113);
+    border-inline-start-color: rgb(52, 79, 113);
+    caret-color: rgb(52, 79, 113);
+    color: rgb(52, 79, 113);
+    column-rule-color: rgb(52, 79, 113);
+    tab-size: 4;
+    text-decoration: none solid rgb(52, 79, 113);
+    text-size-adjust: 100%;
+    text-transform: uppercase;
+    user-select: none;
+    white-space: nowrap;
+    border: 0px none rgb(52, 79, 113);
+    font: 600 12.8px / 16px "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sansSerif;
+    outline: rgb(52, 79, 113) none 0px;
+}/*#SPAN_2:after*/
+
+#SPAN_2:before {
+    border-block-end-color: rgb(52, 79, 113);
+    border-block-start-color: rgb(52, 79, 113);
+    border-inline-end-color: rgb(52, 79, 113);
+    border-inline-start-color: rgb(52, 79, 113);
+    caret-color: rgb(52, 79, 113);
+    color: rgb(52, 79, 113);
+    column-rule-color: rgb(52, 79, 113);
+    tab-size: 4;
+    text-decoration: none solid rgb(52, 79, 113);
+    text-size-adjust: 100%;
+    text-transform: uppercase;
+    user-select: none;
+    white-space: nowrap;
+    border: 0px none rgb(52, 79, 113);
+    font: 600 12.8px / 16px "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sansSerif;
+    outline: rgb(52, 79, 113) none 0px;
+}/*#SPAN_2:before*/
+
+.editText{
+height: min 440px;
+padding: 30px;
+margin-left: 20px;
+}
+
+
+#editableText{
+    height: min 440px;
+    padding: 30px;
+    margin-left: 20px; 
+}
+
+
+#H4_1 {
+block-size: 53px;
+border-block-end-color: rgba(0, 0, 0, 0.125);
+border-block-end-style: solid;
+border-block-end-width: 1px;
+border-block-start-color: rgb(33, 37, 41);
+border-inline-end-color: rgb(33, 37, 41);
+border-inline-start-color: rgb(33, 37, 41);
+box-sizing: border-box;
+caret-color: rgb(33, 37, 41);
+color: rgb(33, 37, 41);
+column-rule-color: rgb(33, 37, 41);
+height: 53px;
+inline-size: 456.5px;
+margin-block-end: 0px;
+margin-block-start: 0px;
+min-block-size: auto;
+min-height: auto;
+min-inline-size: auto;
+min-width: auto;
+overflow-wrap: break-word;
+padding-block-end: 12px;
+padding-block-start: 12px;
+padding-inline-end: 20px;
+padding-inline-start: 20px;
+perspective-origin: 228.25px 26.5px;
+text-align: left;
+text-decoration: none solid rgb(33, 37, 41);
+text-size-adjust: 100%;
+transform-origin: 228.25px 26.5px;
+width: 456.5px;
+background: rgba(0, 0, 0, 0.03) none repeat scroll 0% 0% / auto padding-box border-box;
+border-top: 0px none rgb(33, 37, 41);
+border-right: 0px none rgb(33, 37, 41);
+border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+border-left: 0px none rgb(33, 37, 41);
+border-radius: 3px 3px 0px 0px;
+font: 500 24px / 28.8px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+margin: 0px;
+outline: rgb(33, 37, 41) none 0px;
+padding: 12px 20px;
+}
