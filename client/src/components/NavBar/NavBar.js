@@ -22,6 +22,7 @@ const Example = (props) => {
           </Nav>
         </Collapse>
       </Navbar>
+      
     </div>
   );
 }
