@@ -21,14 +21,14 @@
 } */
 
 .navBar{
-  background-color: rgb(129, 131, 252);
-  font: 500 12.8px / 16px "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sansSerif;
+  background-color: #17a2b8;
+    font: 500 12.8px / 16px "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sansSerif;
   width: 100%;
 }
 
 .footer{
-  background-color: rgb(136, 248, 121);
-  font: 600 12px / 16px "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sansSerif;
+  background-color: #17a2b8;
+    font: 600 12px / 16px "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sansSerif;
 }
 
 .col{
