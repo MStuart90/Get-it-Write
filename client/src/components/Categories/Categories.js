@@ -118,7 +118,6 @@ const Categories = () => {
   }
 
   return (
-    <Container className="p-2">
       <Card className="categoriesCard">
         <CardHeader tag="h4">Categories</CardHeader>
         <CardBody>
@@ -506,7 +505,6 @@ const Categories = () => {
           </Container>
         </CardBody>
       </Card>
-    </Container>
   );
 };
 
