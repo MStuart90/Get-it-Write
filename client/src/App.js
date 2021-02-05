@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <div>
-       <Container>
+       
           <header className='header'>
             <Row>
               <Col className='navBar'><NavBar />Nav bar Goes Here</Col>
@@ -28,7 +28,7 @@ class App extends Component {
               <Col className='footer'><Footer />Footer Goes Here</Col>
             </Row>
           </footer>
-      </Container>
+      
       </div>
     );
   }

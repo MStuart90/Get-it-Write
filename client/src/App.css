@@ -8,16 +8,24 @@
 
 .editText{
   background-color: rgb(206, 204, 204);
+  margin-left: 20px;
+  padding: 0px;
 
 }
 .textArea{
   border: 1px solid rgb(88, 88, 88);
+  font: 500 12.8px / 16px "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sansSerif;
+  margin-left:60px;
 }
 
 .navBar{
   background-color: rgb(129, 131, 252);
+  font: 500 12.8px / 16px "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sansSerif;
+  width: 100%;
 }
 
 .footer{
-  background-color: rgb(121, 191, 248);
+  background-color: rgb(136, 248, 121);
+  font: 600 12px / 16px "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sansSerif;
 }
+
