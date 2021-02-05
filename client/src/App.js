@@ -19,8 +19,8 @@ class App extends Component {
           </header>
           <article>
             <Row className='rows'>
-              <Col className='editText'><EditableText /></Col>
-              <Col className='columns'><Categories /></Col>
+              <Col style={{paddingRight: "0px" }} className='editText'><EditableText /></Col>
+              <Col style={{paddingLeft: "0px" }} className='columns' ><Categories /></Col>
             </Row>
           </article>
           <footer>
