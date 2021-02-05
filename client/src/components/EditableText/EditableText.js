@@ -28,12 +28,15 @@ class EditableText extends React.Component {
       <Form ClassName="formDiv" onSubmit={this.handleSubmit}>
         <CardHeader tag="h4">Get it Write text:</CardHeader>
         <label>
-          <Input style={{marginLeft: "40px", marginTop: "20px" }}className="textArea" type="textArea" value={this.state.value} onChange={this.handleChange} placeholder="Get it write text goes here"/>
+      
+          <Input style={{marginLeft: "40px", marginTop: "20px" }}className="textArea" type="textarea" cols="93" rows="20" value={this.state.value} onChange={this.handleChange} placeholder="Get it write text goes here"/>
         </label>
+        
         <div style={{marginLeft: "40px"}}>
         <Button variant="primary" size="sm">Share</Button>{' '}
      <Button variant="primary" size="sm">Create email</Button>{' '}
      <Button variant="primary" size="sm">Copy</Button>{' '}
+     <div></div>
      </div>
       </Form>
       

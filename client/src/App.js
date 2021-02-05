@@ -14,18 +14,18 @@ class App extends Component {
        
           <header className='header'>
             <Row>
-              <Col className='navBar'><NavBar />Nav bar Goes Here</Col>
+              <Col className='navBar'><NavBar /></Col>
             </Row>
           </header>
           <article>
             <Row className='rows'>
-              <Col className='editText'><EditableText /></Col>
-              <Col className='columns'><Categories /></Col>
+              <Col style={{paddingRight: "0px" }} className='editText'><EditableText /></Col>
+              <Col style={{paddingLeft: "0px" }} className='columns' ><Categories /></Col>
             </Row>
           </article>
           <footer>
             <Row>
-              <Col className='footer'><Footer />Footer Goes Here</Col>
+              <Col className='footer'><Footer /></Col>
             </Row>
           </footer>
       
