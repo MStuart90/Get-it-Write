@@ -1,20 +1,3 @@
-// import React, { Component } from 'react';
-
-
-// class NavBar extends Component {
-//     render() {
-//   return (
-//     <>
-//     </>
-//   );
-// }
-// }
-
-
-// export default NavBar;
-
-
-
 import React, { useState } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
@@ -25,8 +8,8 @@ const Example = (props) => {
 
   return (
     <div>
-      <Navbar color="faded" light> 
-        <NavbarBrand href="/" className="mr-auto">Get it Write</NavbarBrand>
+      <Navbar color="faded" light>
+        <NavbarBrand href="/" className="mr-auto">Get It Write</NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
