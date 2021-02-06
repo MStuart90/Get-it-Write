@@ -27,13 +27,14 @@ class EditableText extends React.Component {
     return (
       <Form style={{ height: "50vw" }} onSubmit={this.handleSubmit}>
         <CardHeader tag="h4">Get it Write text:</CardHeader>
-        {/* <label></label> */}
+        
         <div
           ClassName="formDiv"
           style={{
             marginBottom: "20px",
             marginLeft: "20px",
             marginRight: "20px",
+            marginTop: "20px"
           }}
         >
           <Input
@@ -45,10 +46,9 @@ class EditableText extends React.Component {
             placeholder="Get it write text goes here"
           />
           <CopyToClipboard text={this.state.value}>
-            <Button variant="primary" size="sm">Copy</Button>
+            <Button style={{marginTop: "10px"}} variant="primary" size="sm">Copy</Button>
          </CopyToClipboard> 
-        
-          <Button style={{marginLeft: "10px"}} variant="primary" size="sm">
+          <Button style={{marginLeft: "10px", marginTop: "10px"}} variant="primary" size="sm">
             Create email
           </Button>{" "}
          
