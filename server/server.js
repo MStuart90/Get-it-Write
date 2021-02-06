@@ -15,6 +15,12 @@ connectDB();
 
 app.get('/',(req, res) => res.send('API Running'));
 
+//Defile routes for users stuff
+app.use('/api/users', require('./routes/api/users'));
+app.use('/api/auth', require('./routes/api/auth'));
+app.use('/api/profile', require('./routes/api/profile'));
+
+
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
 	console.log(`App listening on PORT: ${PORT}`);
