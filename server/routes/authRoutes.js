@@ -1,3 +1,4 @@
+/*
 const router = require('express').Router();
 const passport = require('../config/passport');
 const authController = require('../controllers/authController');
@@ -8,3 +9,4 @@ router.post('/logout', authController.logout);
 router.post('/signup', authController.register);
 
 module.exports = router;
+*/
