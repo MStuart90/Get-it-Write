@@ -37,6 +37,8 @@ async (req, res) => {
       }
 
         //Get users gravatar
+        // https://github.com/emerleite/node-gravatar
+        
         const avatar = gravatar.url(email, {
             s: '200', //default size
             r: 'pg', //rating to make sure our users don't go blind.
