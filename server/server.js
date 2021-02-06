@@ -1,30 +1,34 @@
 require('dotenv').config();
-
 const express = require('express');
-const morgan = require('morgan');
-const session = require('express-session');
-const MongoStore = require('connect-mongo')(session);
-const dbConnection = require('./config/connection');
-const passport = require('./config/passport');
-const path = require('path');
+const connectDB = require('./config/db');
 const app = express();
-const PORT = process.env.PORT || 8080;
+const path = require('path');
 
-// Middlewares
-app.use(morgan('dev'));
+//Connect database
+connectDB();
+
+// Init middleware(s)
+app.use(express.json({ extended: false }));
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 app.use('/', express.static(path.join(__dirname, '../client/build')));
+// app.use(morgan('dev'));
+app.get('/',(req, res) => res.send('API Running'));
 
-// Passport
-app.use(passport.initialize());
-app.use(passport.session()); // will call the deserializeUser
-app.use(session({
-  secret: process.env.AUTH_SECRET,
-  store: new MongoStore({ mongooseConnection: dbConnection }),
-  resave: false,
-  saveUninitialized: false
-}));
+//Defile routes for users stuff
+app.use('/api/users', require('./routes/api/users'));
+app.use('/api/auth', require('./routes/api/auth'));
+app.use('/api/profile', require('./routes/api/profile'));
+
+
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+	console.log(`App listening on PORT: ${PORT}`);
+});
+
+
+/*
+
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/build/'))
@@ -45,6 +49,19 @@ app.use(function(err, req, res, next) {
 	res.status(500);
 })
 
-app.listen(PORT, () => {
-	console.log(`App listening on PORT: ${PORT}`);
-});
+// Passport
+app.use(passport.initialize());
+app.use(passport.session()); // will call the deserializeUser
+app.use(session({
+  secret: process.env.AUTH_SECRET,
+  store: new MongoStore({ mongooseConnection: dbConnection }),
+  resave: false,
+  saveUninitialized: false
+}));
+*/
+
+//const morgan = require('morgan');
+//const session = require('express-session');
+//const MongoStore = require('connect-mongo')(session);
+//const dbConnection = require('./config/connection');
+//const passport = require('./config/passport');
