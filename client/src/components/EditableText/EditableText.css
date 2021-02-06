@@ -143,10 +143,17 @@ height: min 440px;
 /* margin-left: 20px; */
 }
 
-
 #editableText{
     height: min 440px;
     padding: 30px;
     margin-left: 20px; 
 }
+/* .formDiv{
+    width: 90%;
+    height: 90vh;
+} */
 
+.textArea{
+    width: 90%;
+    height: 90%;
+}
