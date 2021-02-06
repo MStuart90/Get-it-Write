@@ -32,6 +32,7 @@ const Footer = (props) => {
     <Row className=" mt-5">
 
         <Col sm="4">
+        <div class="addthis_inline_share_toolbox_6lg3"></div>
         </Col>
         <Col sm="4">
         <div>
