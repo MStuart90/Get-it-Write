@@ -25,17 +25,17 @@ class EditableText extends React.Component {
   render() {
     return (
       
-      <Form ClassName="formDiv" onSubmit={this.handleSubmit}>
+      <Form style={{height: "45vw"}} onSubmit={this.handleSubmit}>
         <CardHeader tag="h4">Get it Write text:</CardHeader>
-        <label>
-      
-          <Input style={{marginLeft: "40px", marginTop: "20px" }}className="textArea" type="textarea" cols="93" rows="20" value={this.state.value} onChange={this.handleChange} placeholder="Get it write text goes here"/>
-        </label>
+        {/* <label></label> */}
+      <div ClassName="formDiv" style={{marginBottom: "20px", marginLeft: "20px", marginRight: "20px" }}  >
+          <Input className="textArea" type="textarea" style={{height: "30vw"}} value={this.state.value} onChange={this.handleChange} placeholder="Get it write text goes here"/>
+          </div>
         
         <div style={{marginLeft: "40px"}}>
-        <Button variant="primary" size="sm">Share</Button>{' '}
-     <Button variant="primary" size="sm">Create email</Button>{' '}
-     <Button variant="primary" size="sm">Copy</Button>{' '}
+        <Button style={{width: "10vw"}} variant="primary" size="sm">Share</Button>{' '}
+     <Button style={{width: "10vw"}} variant="primary" size="sm">Create email</Button>{' '}
+     <Button style={{width: "10vw"}} variant="primary" size="sm">Copy</Button>{' '}
      <div>
        <h3></h3>
      </div>
