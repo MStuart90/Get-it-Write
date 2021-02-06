@@ -24,26 +24,31 @@
   },
   "homepage": "https://github.com/alperg/project3-starter-auth#readme",
   "devDependencies": {
-    "concurrently": "^3.5.0",
-    "nodemon": "^1.11.0"
+    "concurrently": "^3.6.1",
+    "nodemon": "^1.19.4"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "bcrypt": "^3.0.2",
     "bcryptjs": "^2.4.3",
     "bootstrap": "^4.6.0",
+    "config": "^3.3.3",
     "connect-mongo": "^2.0.1",
     "dotenv": "^6.1.0",
-    "express": "^4.16.4",
+    "express": "^4.17.1",
     "express-session": "^1.15.6",
+    "express-validator": "^6.9.2",
+    "gravatar": "^1.8.1",
     "if-env": "^1.0.4",
-    "mongoose": "^5.3.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.14",
     "morgan": "^1.9.1",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "react": "^17.0.1",
     "react-copy-to-clipboard": "^5.0.3",
     "react-dom": "^17.0.1",
-    "reactstrap": "^8.9.0"
+    "reactstrap": "^8.9.0",
+    "request": "^2.88.2"
   }
 }

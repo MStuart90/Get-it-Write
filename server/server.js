@@ -1,5 +1,4 @@
 require('dotenv').config();
-
 const express = require('express');
 const morgan = require('morgan');
 const session = require('express-session');
@@ -9,6 +8,7 @@ const passport = require('./config/passport');
 const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 8080;
+
 
 // Middlewares
 app.use(morgan('dev'));
