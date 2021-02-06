@@ -1,12 +1,18 @@
+require('dotenv').config();
 const express = require('express');
 const connectDB = require('./config/db');
 const app = express();
+const path = require('path');
 
 //Connect database
 connectDB();
 
-// Init middleware
+// Init middleware(s)
 app.use(express.json({ extended: false }));
+// app.use(morgan('dev'));
+app.use(express.urlencoded({extended: false}));
+app.use(express.json());
+app.use('/', express.static(path.join(__dirname, '../client/build')));
 
 app.get('/',(req, res) => res.send('API Running'));
 
@@ -38,11 +44,7 @@ app.listen(PORT, () => {
 
 
 /*
-// Middlewares
-app.use(morgan('dev'));
-app.use(express.urlencoded({extended: false}));
-app.use(express.json());
-app.use('/', express.static(path.join(__dirname, '../client/build')));
+
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/build/'))
@@ -74,10 +76,8 @@ app.use(session({
 }));
 */
 
-//require('dotenv').config();
 //const morgan = require('morgan');
 //const session = require('express-session');
 //const MongoStore = require('connect-mongo')(session);
 //const dbConnection = require('./config/connection');
 //const passport = require('./config/passport');
-//const path = require('path');
