@@ -7,11 +7,15 @@
   background-color: white;
   margin-left: 0px;
   padding-left: 0px;
+  letter-spacing: -.5px;
 }
 
 .editText{
-  
-  background-color: rgb(206, 204, 204); 
+  border-top: 1px solid rgb(95, 95, 95);
+  border-left: 1px solid rgb(95, 95, 95);
+  border-bottom: 1px solid rgb(95, 95, 95);
+  background-color: rgb(206, 204, 204);
+  letter-spacing: -.5px; 
 }
 
 /* .textArea{

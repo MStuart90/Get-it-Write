@@ -36,7 +36,9 @@ class EditableText extends React.Component {
         <Button variant="primary" size="sm">Share</Button>{' '}
      <Button variant="primary" size="sm">Create email</Button>{' '}
      <Button variant="primary" size="sm">Copy</Button>{' '}
-     <div></div>
+     <div>
+       <h3></h3>
+     </div>
      </div>
       </Form>
       
