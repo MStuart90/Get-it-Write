@@ -1,3 +1,4 @@
+/*
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const db = require('../models');
@@ -43,3 +44,4 @@ passport.deserializeUser((id, done) => {
 passport.use(localStrategy);
 
 module.exports = passport;
+*/

@@ -1,0 +1,4 @@
+{
+    "mongoURI":"mongodb+srv://evilemu:TFnyEc1mHF68fKwr@get-it-write.jyyjy.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    "jwtSecret":"supersecrettoken"
+}

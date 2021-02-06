@@ -33,20 +33,11 @@
 
 
 import React, { useState } from 'react';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
-} from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import './navbar.css';
+import logo from './logo.png';
+
+console.log(logo);
 
 const Example = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,11 +46,11 @@ const Example = (props) => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
+      <Navbar color="faded" light>
+        <NavbarBrand href="/" className="mr-auto"><img src={logo} alt="Logo" id='logo' /></NavbarBrand>
+        <NavbarToggler onClick={toggleNavbar} className="mr-2" />
+        <Collapse isOpen={!collapsed} navbar>
+          <Nav navbar>
             <NavItem>
               <NavLink href="/components/">Components</NavLink>
             </NavItem>

@@ -50,7 +50,3 @@ input[type="radio"]:checked:after {
   background-color: slategray !important;
   border-color: slategray !important;
 }
-.col .col-1{
-padding-left: 0px;
-padding-right: 0px;
-}
