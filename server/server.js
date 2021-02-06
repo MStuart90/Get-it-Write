@@ -1,17 +1,12 @@
-//require('dotenv').config();
-//const morgan = require('morgan');
-//const session = require('express-session');
-//const MongoStore = require('connect-mongo')(session);
-//const dbConnection = require('./config/connection');
-//const passport = require('./config/passport');
-//const path = require('path');
-
 const express = require('express');
 const connectDB = require('./config/db');
 const app = express();
 
 //Connect database
 connectDB();
+
+// Init middleware
+app.use(express.json({ extended: false }));
 
 app.get('/',(req, res) => res.send('API Running'));
 
@@ -78,3 +73,11 @@ app.use(session({
   saveUninitialized: false
 }));
 */
+
+//require('dotenv').config();
+//const morgan = require('morgan');
+//const session = require('express-session');
+//const MongoStore = require('connect-mongo')(session);
+//const dbConnection = require('./config/connection');
+//const passport = require('./config/passport');
+//const path = require('path');
