@@ -17,12 +17,12 @@ class App extends Component {
               <Col className='navBar'><NavBar /></Col>
             </Row>
           </header>
-          <article>
+          <main>
             <Row className='rows'>
               <Col style={{paddingRight: "0px" }} className='editText'><EditableText /></Col>
               <Col style={{paddingLeft: "0px" }} className='columns' ><Categories /></Col>
             </Row>
-          </article>
+          </main>
           <footer>
             <Row>
               <Col className='footer'><Footer /></Col>
