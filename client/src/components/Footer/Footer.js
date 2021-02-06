@@ -27,15 +27,15 @@ const Footer = (props) => {
     maxWidth: 50
   }
 
-{/* <div className="footer">
-    <p>© 2021 Get it Write. All Rights Reserved</p>
-  </div> */}
 
   return (
     <Row className=" mt-5">
-        <Col sm="3" xs="6">
+
+        <Col sm="4">
+        </Col>
+        <Col sm="4">
         <div>
-       <Button color="primary" onClick={toggle} style={{ marginBottom: '1rem' }}>Toggle</Button>
+       <p onMouseOver={toggle} style={{ marginBottom: '1rem' }}>Developers</p>
        <Collapse
           isOpen={collapse}
           onEntering={onEntering}
@@ -122,6 +122,11 @@ const Footer = (props) => {
           </div>
         </Collapse>
       </div>
+        </Col>
+        <Col sm="4">
+        <div className="footer">
+         <p>© 2021 Get it Write. All Rights Reserved</p>
+        </div> 
         </Col>
       </Row>
   );
