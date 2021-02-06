@@ -9,11 +9,10 @@ connectDB();
 
 // Init middleware(s)
 app.use(express.json({ extended: false }));
-// app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 app.use('/', express.static(path.join(__dirname, '../client/build')));
-
+// app.use(morgan('dev'));
 app.get('/',(req, res) => res.send('API Running'));
 
 //Defile routes for users stuff
@@ -26,21 +25,6 @@ const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
 	console.log(`App listening on PORT: ${PORT}`);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*
