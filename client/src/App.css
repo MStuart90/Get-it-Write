@@ -43,3 +43,7 @@
   padding-left: 0px;
   padding-right: 0px;
 }
+
+main{
+  height: calc(100vh - 166px);
+}
