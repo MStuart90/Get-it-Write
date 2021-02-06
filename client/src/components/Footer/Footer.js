@@ -34,6 +34,15 @@ const Footer = (props) => {
   return (
     <Row className=" mt-5">
         <Col sm="3" xs="6">
+        <div>
+       <Button color="primary" onClick={toggle} style={{ marginBottom: '1rem' }}>Toggle</Button>
+       <Collapse
+          isOpen={collapse}
+          onEntering={onEntering}
+          onEntered={onEntered}
+          onExiting={onExiting}
+          onExited={onExited}
+        >
           <div className="avatar-group">
             <a
               className=" avatar avatar-xs rounded-circle"
@@ -111,24 +120,10 @@ const Footer = (props) => {
               Maria Byler 
             </UncontrolledTooltip>
           </div>
+        </Collapse>
+      </div>
         </Col>
       </Row>
-    // <div>
-    //   <Button color="primary" onClick={toggle} style={{ marginBottom: '1rem' }}>Toggle</Button>
-    //   <Collapse
-    //     isOpen={collapse}
-    //     onEntering={onEntering}
-    //     onEntered={onEntered}
-    //     onExiting={onExiting}
-    //     onExited={onExited}
-    //   >
-    //     <Card>
-    //       <CardBody href="/" className="p-5"><img src={Gene} alt="Gene" id='Gene'/>
-    //       filler
-    //       </CardBody>
-    //     </Card>
-    //   </Collapse>
-    // </div>
   );
 }
 
