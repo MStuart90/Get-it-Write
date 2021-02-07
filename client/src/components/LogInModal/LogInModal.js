@@ -1,32 +1,18 @@
+import React, { Component } from 'react';
+import Modal from "react-responsive-modal";
+// import './css/style.css'
+// import icon from "./assets/logo.png"
+import icon from './logo.png';
 
-import React, { useState } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
-const ModalExample = (props) => {
-  const {
-    buttonLabel,
-    className
-  } = props;
+class Header extends Component {
 
-  const [modal, setModal] = useState(false);
+    constructor(props) {
+        super(props)
 
-  const toggle = () => setModal(!modal);
+        this.state = {
+            sign: false,
+            login: false,
 
-  return (
-    <div>
-      <Button color="danger" onClick={toggle}>{buttonLabel}</Button>
-      <Modal isOpen={modal} toggle={toggle} className={className}>
-        <ModalHeader toggle={toggle}>SIGN IN</ModalHeader>
-        <ModalBody>
-          Sign In or Sign Up
-        </ModalBody>
-        <ModalFooter>
-          <Button color="primary" onClick={toggle}>Sign In</Button>{' '}
-          <Button color="secondary" onClick={toggle}>Sign Up</Button>
-        </ModalFooter>
-      </Modal>
-    </div>
-  );
-}
-
-export default ModalExample;
+        }
+    }
