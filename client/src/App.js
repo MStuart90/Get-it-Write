@@ -16,6 +16,7 @@ const App = () => {
         <Row>
           <Col className="navBar">
             <NavBar />
+            {/* <LogInModal /> */}
           </Col>
         </Row>
       </header>
