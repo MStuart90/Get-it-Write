@@ -25,14 +25,16 @@ const LogInModal = (props) => {
 const handleUsernameChange = (e) => {
     setState({username:e.target.value})
 }
-
+const submitForm = () => {
+    let logIn= {username: state.username, password: state.password, email: state.email}
+}
   return (
     <div>
       <Button color="danger" onClick={toggle}>{buttonLabel}</Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
         <ModalHeader toggle={toggle}>Log In</ModalHeader>
         <ModalBody>
-        <form>
+        <form onSubmit={submitForm}>
 
         <label for="username" sm={2}>username</label>
      
