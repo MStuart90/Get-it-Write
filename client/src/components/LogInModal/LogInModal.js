@@ -33,7 +33,10 @@ const submitForm = (e) => {
     e.preventDefault()
     let logIn= { password: state.password, username: state.username, email: state.email}
     
-    axios.post("api/auth", logIn).then(res => {console.log(res)})
+    axios.post("api/auth", logIn).then(res => {axios.get("api/auth", res).then(userdata => {
+    console.log(userdata)
+    })})
+    
 }
   return (
     <div>

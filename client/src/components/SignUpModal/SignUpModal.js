@@ -31,9 +31,9 @@ const handleUsernameChange = (e) => {
 }
 const submitForm = (e) => {
     e.preventDefault()
-    let logIn= { password: state.password, username: state.username, email: state.email}
+    let signUp= { password: state.password, username: state.username, email: state.email}
     
-    axios.post("api/auth", logIn).then(res => {console.log(res)})
+    axios.post("api/signup", signUp).then(res => {console.log(res)})
 }
   return (
     <div>

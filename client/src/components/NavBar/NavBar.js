@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Collapse, Button,  Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import logo from './logo.png';
-import LogInModal from '../LogInModal/LogInModal'
+import LogInModal from '../LogInModal/LogInModal';
+import SignUpModal from '../SignUpModal/SignUpModal'
 
 
 
