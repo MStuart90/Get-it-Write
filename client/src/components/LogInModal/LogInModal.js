@@ -1,5 +1,6 @@
 import React, {setState, useState, state} from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import axios from 'axios'
 
 
 const LogInModal = (props) => {
@@ -16,17 +17,23 @@ const LogInModal = (props) => {
   });
 
   const handleEmailChange = (e) => {
+     
       setState({email:e.target.value})
       
   }
   const handlePasswordChange = (e) => {
+    
     setState({password:e.target.value})
 }
 const handleUsernameChange = (e) => {
+    
     setState({username:e.target.value})
 }
-const submitForm = () => {
-    let logIn= {username: state.username, password: state.password, email: state.email}
+const submitForm = (e) => {
+    e.preventDefault()
+    let logIn= { password: state.password, username: state.username, email: state.email}
+    
+    axios.post("api/auth", logIn).then(res => {console.log(res)})
 }
   return (
     <div>
