@@ -5,6 +5,7 @@ import LogInModal from '../LogInModal/LogInModal'
 
 
 
+
 const Example = (props) => {
   const [collapsed, setCollapsed] = useState(true);
   const [modal, setModal] = useState(false);
