@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import { Button, Form, FormGroup, Label, Input, CardHeader } from "reactstrap";
 // import CopyButton from "../../components/CopyButton/CopyButton";
 import "./EditableText.css";
-import { CopyToClipboard } from 'react-copy-to-clipboard';
-
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 class EditableText extends React.Component {
   constructor(props) {
@@ -27,14 +26,14 @@ class EditableText extends React.Component {
     return (
       <Form style={{ height: "50vw" }} onSubmit={this.handleSubmit}>
         <CardHeader tag="h4">Get it Write text:</CardHeader>
-        
+
         <div
           ClassName="formDiv"
           style={{
             marginBottom: "20px",
             marginLeft: "20px",
             marginRight: "20px",
-            marginTop: "20px"
+            marginTop: "20px",
           }}
         >
           <Input
@@ -46,12 +45,20 @@ class EditableText extends React.Component {
             placeholder="Get it write text goes here"
           />
           <CopyToClipboard text={this.state.value}>
-            <Button style={{marginTop: "10px"}} variant="primary" size="sm">Copy</Button>
-         </CopyToClipboard> 
-          <Button style={{marginLeft: "10px", marginTop: "10px"}} variant="primary" size="sm">
-            Create email
+            <Button style={{ marginTop: "10px" }} variant="primary" size="sm">
+              Copy
+            </Button>
+          </CopyToClipboard>
+
+          <Button
+            style={{ marginLeft: "10px", marginTop: "10px" }}
+            variant="primary"
+            size="sm"
+          ><a href="mailto:">
+          Create email
+          </a>
           </Button>{" "}
-         
+
           <div>
             <h3></h3>
           </div>
@@ -62,5 +69,3 @@ class EditableText extends React.Component {
 }
 
 export default EditableText;
-
-
