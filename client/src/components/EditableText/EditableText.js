@@ -28,7 +28,7 @@ class EditableText extends React.Component {
         <CardHeader tag="h4">Get it Write text:</CardHeader>
 
         <div
-          ClassName="formDiv"
+          className="formDiv"
           style={{
             marginBottom: "20px",
             marginLeft: "20px",
