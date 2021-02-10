@@ -23,11 +23,12 @@ const Example = (props) => {
           <Nav navbar>
             <NavItem>
               <LogInModal buttonLabel={'Log In'}/>
+              <SignUpModal buttonLabel={'Sign In'}/>
             {/* <Button color="danger" onClick={toggle}>Sign In</Button>
               <NavLink href="/components/">Sign In</NavLink> */}
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">Sign Up</NavLink>
+              {/* <NavLink href="https://github.com/reactstrap/reactstrap">Sign Up</NavLink> */}
             </NavItem>
           </Nav>
         {/* </Collapse> */}
