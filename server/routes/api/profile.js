@@ -79,10 +79,10 @@ router.post(
       // Build social object
       profileFields.social = {};
       if (youtube) profileFields.social.youtube = youtube;
-      if (twitter) profileFields.social.twitter = youtube;
-      if (facebook) profileFields.social.facebook = youtube;
-      if (linkedin) profileFields.social.linkedin = youtube;
-      if (instagram) profileFields.social.instagram = youtube;
+      if (twitter) profileFields.social.twitter = twitter;
+      if (facebook) profileFields.social.facebook = facebook;
+      if (linkedin) profileFields.social.linkedin = linkedin;
+      if (instagram) profileFields.social.instagram = instgram;
 
       try {
         let profile = await Profile.findOne({ user: req.user.id });
@@ -109,5 +109,24 @@ router.post(
       }
     }
   );
+
+
+  // @route    GET api/profile
+// @desc     Get all profiles
+// @access   Public
+
+router.get('/', async (req, res) => {
+  try {
+    const profile = await Profile.find().populate('user', ['name','avatar']);
+    res.json(profiles);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server Error');
+  }
+
+});
+
+
+
 
 module.exports = router;
