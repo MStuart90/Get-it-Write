@@ -38,7 +38,7 @@ const submitForm = (e) => {
 }
   return (
     <div>
-      <Button color="danger" onClick={toggle}>{buttonLabel}</Button>
+      <Button color="muted" onClick={toggle}>{buttonLabel}</Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
         <ModalHeader toggle={toggle}>Sign up</ModalHeader>
         <div className="modalForm" >
@@ -66,7 +66,7 @@ const submitForm = (e) => {
         </ModalBody>
         </div>
         <ModalFooter>
-          <Button color="primary" onClick={toggle}>Do Something</Button>{' '}
+          <Button color="primary" onClick={toggle}>Submit</Button>{' '}
           <Button color="secondary" onClick={toggle}>Cancel</Button>
         </ModalFooter>
       </Modal>
