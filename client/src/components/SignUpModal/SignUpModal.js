@@ -39,7 +39,7 @@ const submitForm = (e) => {
     <div>
       <Button color="danger" onClick={toggle}>{buttonLabel}</Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
-        <ModalHeader toggle={toggle}>Log In</ModalHeader>
+        <ModalHeader toggle={toggle}>Sign up</ModalHeader>
         <ModalBody>
         <form onSubmit={submitForm}>
 
