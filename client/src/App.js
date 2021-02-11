@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import Categories from "./components/Categories/Categories";
 import Fields from "./components/Fields/Fields";
+import LogInModal from "./components/LogInModal/LogInModal";
 
 const App = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -15,6 +16,7 @@ const App = () => {
         <Row>
           <Col className="navBar">
             <NavBar />
+            {/* <LogInModal /> */}
           </Col>
         </Row>
       </header>
