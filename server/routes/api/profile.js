@@ -7,11 +7,9 @@ const { check, validationResult } = require('express-validator');
 // bring in normalize to give us a proper url, regardless of what user entered
 // const normalize = require('normalize-url');
 // const checkObjectId = require('../../middleware/checkObjectId');
-
 const Profile = require('../../../models/Profile');
 const User = require('../../../models/User');
 // const Post = require('../../models/Post');
-
 // @route    GET api/profile/me
 // @desc     Get current users profile
 // @access   Private
@@ -48,53 +46,85 @@ router.post(
   
       // destructure the request
       const {
+        company,
         website,
+        location,
+        bio,
+        status,
+        githubusername,
         skills,
         youtube,
+        facebook,
         twitter,
         instagram,
         linkedin,
-        facebook,
         // spread the rest of the fields we don't need to check
         ...rest
       } = req.body;
   
-      // build a profile
-      const profileFields = {
-        user: req.user.id,
-        website:
-          website && website !== ''
-            ? normalize(website, { forceHttps: true })
-            : '',
-        skills: Array.isArray(skills)
-          ? skills
-          : skills.split(',').map((skill) => ' ' + skill.trim()),
-        ...rest
-      };
-  
-      // Build socialFields object
-      const socialFields = { youtube, twitter, instagram, linkedin, facebook };
-  
-      // normalize social fields to ensure valid url
-      for (const [key, value] of Object.entries(socialFields)) {
-        if (value && value.length > 0)
-          socialFields[key] = normalize(value, { forceHttps: true });
+      // build a profile object to insert into db
+      const profileFields = {};
+      profileFields.user = req.user.id;
+      if (company) profileFields.company = company;
+      if (website) profileFields.website = website;
+      if (location) profileFields.location = location;
+      if (bio) profileFields.bio = bio;
+      if (status) profileFields.status = status; 
+      if (githubusername) profileFields.githubusername = githubusername;
+      if (skills) {
+        profileFields.skills = skills.split(',').map(skill => skill.trim());
       }
-      // add to profileFields
-      profileFields.social = socialFields;
-  
+      console.log('Hello');
+      
+      // Build social object
+      profileFields.social = {};
+      if (youtube) profileFields.social.youtube = youtube;
+      if (twitter) profileFields.social.twitter = twitter;
+      if (facebook) profileFields.social.facebook = facebook;
+      if (linkedin) profileFields.social.linkedin = linkedin;
+      if (instagram) profileFields.social.instagram = instgram;
+
       try {
-        // Using upsert option (creates new doc if no match is found):
-        let profile = await Profile.findOneAndUpdate(
-          { user: req.user.id },
-          { $set: profileFields },
-          { new: true, upsert: true, setDefaultsOnInsert: true }
-        );
-        return res.json(profile);
+        let profile = await Profile.findOne({ user: req.user.id });
+        
+        if(profile) {
+          //Update user profile
+          profile = await Profile.findOneAndUpdate(
+            { user: req.user.id}, 
+            { $set: profileFields  },
+            { new: true }
+          );
+
+          return res.json(profile);
+        }
+
+        //Create
+        profile = new Profile(profileFields);
+
+        await Profile.save();
+        res.json(profile);
       } catch (err) {
         console.error(err.message);
-        return res.status(500).send('Server Error');
+        res.status(500).send('Server Error');
       }
     }
   );
+
+
+// @route    GET api/profile
+// @desc     Get all profiles
+// @access   Public
+router.get('/', async (_req, res) => {
+  try {
+    const profiles = await Profile.find().populate('user', ['name', 'avatar']);
+    res.json(profiles);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server Error');
+  }
+
+});
+
+
+
 module.exports = router;
