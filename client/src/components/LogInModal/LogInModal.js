@@ -44,15 +44,18 @@ const submitForm = (e) => {
       <Button color="danger" onClick={toggle}>{buttonLabel}</Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
         <ModalHeader toggle={toggle}>Log In</ModalHeader>
-        <div className="logInForm" >
+        <div className="modalForm" >
+          
         <ModalBody>
         <form onSubmit={submitForm}>
 
+
+        {/* Log in with username?  */}
         <label for="username" sm={2}>username</label>
      
      <input type="text" onChange={handleUsernameChange} value={state.username} name="username" id="username" placeholder="username" />
   
-     
+     {/* Log in with email?  */}
         <label for="exampleEmail" sm={2}>Email</label>
      
           <input type="email" onChange={handleEmailChange} value={state.email} name="email" id="exampleEmail" placeholder="with a placeholder" />
@@ -67,6 +70,7 @@ const submitForm = (e) => {
       </form>
         </ModalBody>
         </div>
+        
         <ModalFooter>
           <Button color="primary" onClick={toggle}>Submit</Button>{' '}
           <Button color="secondary" onClick={toggle}>Cancel</Button>

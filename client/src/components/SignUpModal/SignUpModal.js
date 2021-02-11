@@ -1,6 +1,7 @@
 import React, {setState, useState, state} from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import axios from 'axios'
+import axios from 'axios';
+import "../LogInModal/LogInModal.css"
 
 
 const SignUpModal = (props) => {
@@ -40,9 +41,11 @@ const submitForm = (e) => {
       <Button color="danger" onClick={toggle}>{buttonLabel}</Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
         <ModalHeader toggle={toggle}>Sign up</ModalHeader>
+        <div className="modalForm" >
         <ModalBody>
         <form onSubmit={submitForm}>
 
+        
         <label for="username" sm={2}>username</label>
      
      <input type="text" onChange={handleUsernameChange} value={state.username} name="username" id="username" placeholder="username" />
@@ -57,10 +60,11 @@ const submitForm = (e) => {
         <label for="examplePassword" sm={2}>Password</label>
        
           <input type="password" onChange={handlePasswordChange} value={state.password} name="password" id="examplePassword" placeholder="password placeholder" />
-        <input type="submit" value="Submit" />
+        {/* <input type="submit" value="Submit" /> */}
       
       </form>
         </ModalBody>
+        </div>
         <ModalFooter>
           <Button color="primary" onClick={toggle}>Do Something</Button>{' '}
           <Button color="secondary" onClick={toggle}>Cancel</Button>
