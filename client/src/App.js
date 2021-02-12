@@ -26,14 +26,12 @@ const App = () => {
           <Col lg="6" sm="12"style={{ paddingRight: "0px" }} className="editText">
             <EditableText />
           </Col>
-
           <Col lg="6" sm="12" style={{ paddingLeft: "0px" }} className="columns">
             <Categories
               setSelectedCategoryInApp={setSelectedCategory}
               setFadeInApp={setFadeIn}
             />
             <Fields selectedCategory={selectedCategory} fadeIn={fadeIn} />
-    
           </Col>
         </Row>
       </main>
