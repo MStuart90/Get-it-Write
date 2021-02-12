@@ -23,7 +23,7 @@ const Example = (props) => {
           <Nav navbar>
             <NavItem>
               <LogInModal buttonLabel={'Log In'}/>
-              <SignUpModal buttonLabel={'Sign In'}/>
+              <SignUpModal buttonLabel={'Sign Up'}/>
             {/* <Button color="danger" onClick={toggle}>Sign In</Button>
               <NavLink href="/components/">Sign In</NavLink> */}
             </NavItem>
