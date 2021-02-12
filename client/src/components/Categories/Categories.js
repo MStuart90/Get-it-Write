@@ -83,6 +83,11 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
     disableCategory(props);
   };
 
+  // removing data from local storage for a clear editable text box
+  window.onload = function () {
+    localStorage.removeItem("selectedCategory");
+  };
+
   // changing the category field colors and disables radio buttons based on user's category selection
   const selected = (props) => {
     setSelectedCategory(selectedCategory);
@@ -92,6 +97,9 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
     setSelectedCategoryInApp(selectedOptionValue);
     setFadeInApp(true);
     disableCategory(props);
+
+    // setting selectedCategory to local storage for use in the editable text box
+    localStorage.setItem("selectedCategory", selectedOptionValue);
   };
 
   // function to disable the category not chosen by the user

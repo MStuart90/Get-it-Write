@@ -38,6 +38,7 @@ class EditableText extends React.Component {
         >
           <Input
             className="textArea"
+            id="editableTextArea"
             type="textarea"
             style={{ height: "35vw" }}
             value={this.state.value}
@@ -49,16 +50,13 @@ class EditableText extends React.Component {
               Copy
             </Button>
           </CopyToClipboard>
-
           <Button
             style={{ marginLeft: "10px", marginTop: "10px" }}
             variant="primary"
             size="sm"
-          ><a href="mailto:">
-          Create email
-          </a>
+          >
+            <a href="mailto:">Create email</a>
           </Button>{" "}
-
           <div>
             <h3></h3>
           </div>
