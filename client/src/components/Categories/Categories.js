@@ -15,7 +15,7 @@ import {
   Col,
 } from "reactstrap";
 
-const Categories = ({ setSelectedCategoryInApp }) => {
+const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
   // setting states for the two main toggle menus and a state to track the user's selected category
   const [isOpen1, setIsOpen1] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
@@ -90,6 +90,7 @@ const Categories = ({ setSelectedCategoryInApp }) => {
     const selectedOptionValue = props.target.value;
     console.log("Subcategory chosen: ", selectedOptionValue);
     setSelectedCategoryInApp(selectedOptionValue);
+    setFadeInApp(true);
     disableCategory(props);
   };
 
