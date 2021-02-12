@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Button, Form, FormGroup, Label, Input, CardHeader } from "reactstrap";
-// import CopyButton from "../../components/CopyButton/CopyButton";
 import "./EditableText.css";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
@@ -20,6 +19,11 @@ class EditableText extends React.Component {
   handleSubmit(event) {
     alert("A name was submitted: " + this.state.value);
     event.preventDefault();
+  }
+
+  clearWasClicked() {
+    this.setState({ value: "" });
+
   }
 
   render() {
@@ -42,7 +46,7 @@ class EditableText extends React.Component {
             type="textarea"
             style={{ height: "35vw" }}
             value={this.state.value}
-            onChange={this.handleChange}
+            onChange={this.handleChange.bind(this)}
             placeholder="Get it write text goes here"
           />
           <CopyToClipboard text={this.state.value}>
@@ -57,6 +61,16 @@ class EditableText extends React.Component {
           >
             <a href="mailto:">Create email</a>
           </Button>{" "}
+
+          <Button id='clearButton'
+          onClick={this.clearWasClicked.bind(this)}
+            style={{ marginLeft: "10px", marginTop: "10px" }}
+            variant="primary"
+            size="sm"
+          >
+          Clear
+          </Button>{" "}
+
           <div>
             <h3></h3>
           </div>

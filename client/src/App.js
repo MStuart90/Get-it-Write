@@ -59,7 +59,6 @@ const App = () => {
           >
             <EditableText />
           </Col>
-
           <Col
             lg="6"
             sm="12"
