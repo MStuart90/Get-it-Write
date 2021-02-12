@@ -10,6 +10,7 @@ import LogInModal from "./components/LogInModal/LogInModal";
 
 const App = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
+  const [fadeIn, setFadeIn] = useState(false);
   return (
     <div>
       <header className="header">
@@ -25,9 +26,18 @@ const App = () => {
           <Col lg="6" sm="12"style={{ paddingRight: "0px" }} className="editText">
             <EditableText />
           </Col>
+<<<<<<< HEAD
           <Col lg="6" sm="12" style={{ paddingLeft: "0px" }} className="columns">
             <Categories setSelectedCategoryInApp={setSelectedCategory} />
             <Fields selectedCategory={selectedCategory} />
+=======
+          <Col style={{ paddingLeft: "0px" }} className="columns">
+            <Categories
+              setSelectedCategoryInApp={setSelectedCategory}
+              setFadeInApp={setFadeIn}
+            />
+            <Fields selectedCategory={selectedCategory} fadeIn={fadeIn} />
+>>>>>>> ec098433f38328a984b0bbafdf2f822c67a76118
           </Col>
         </Row>
       </main>
