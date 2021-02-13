@@ -9,6 +9,7 @@ import Fields from "./components/Fields/Fields";
 // import LogInModal from "./components/LogInModal/LogInModal";
 
 const App = () => {
+  const [categoryText, setCategoryText] = useState('')
   const [selectedCategory, setSelectedCategory] = useState("");
   const [fadeIn, setFadeIn] = useState(false);
 
@@ -33,8 +34,9 @@ const App = () => {
 
         let indexLocation = searchNumber - 1;
 
-        document.getElementById("editableTextArea").value =
-          proOptions[indexLocation];
+     //   document.getElementById("editableTextArea").value =
+       //   proOptions[indexLocation];
+       setCategoryText(proOptions[indexLocation])
       }
     }
   });
@@ -55,6 +57,14 @@ const App = () => {
             lg="6"
             sm="12"
             style={{ paddingRight: "0px" }}
+            className="editText"
+          >
+            <EditableText categoryText={categoryText}/>
+          </Col>
+          <Col
+            lg="6"
+            sm="12"
+            style={{ paddingLeft: "0px" }}
             className="columns"
           >
             <Categories
@@ -75,7 +85,7 @@ const App = () => {
       </main>
       <footer>
         <Row>
-          <Col lg="12" className="footer">
+          <Col lg="12" className="footer fixed-bottom">
             <Footer />
           </Col>
         </Row>
