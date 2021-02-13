@@ -5,11 +5,19 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 
 class EditableText extends React.Component {
   constructor(props) {
+    console.log('props higher', props)
     super(props);
-    this.state = { value: "" };
+    this.state = { value: '' };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevProps.categoryText !== this.props.categoryText) {
+
+      this.setState({value: this.props.categoryText})
+    }
   }
 
   handleChange(event) {
@@ -27,6 +35,8 @@ class EditableText extends React.Component {
   }
 
   render() {
+    console.log('state!!! ', this.state)
+    console.log('PROPS ', this.props)
     return (
       <Form 
       style={{ height: "100%" }} 
