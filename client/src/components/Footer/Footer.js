@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Collapse, Button, CardBody, Card, Row, Col, UncontrolledTooltip } from 'reactstrap';
+import { Collapse, Row, Col, UncontrolledTooltip } from 'reactstrap';
 import Gene from "../../assets/Gene.jpg"; 
 import Melanie from "../../assets/Melanie.jpg"; 
 import Rachel from "../../assets/Rachel.jpg"; 
@@ -26,7 +26,6 @@ const Footer = (props) => {
     maxHeight: 50,
     maxWidth: 50
   }
-
 
   return (
     <Row className=" mt-5">

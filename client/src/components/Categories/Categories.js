@@ -127,7 +127,7 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
   }
 
   return (
-    <Card className="categoriesCard">
+    <div className="categoriesCard">
       <CardHeader tag="h4">Categories</CardHeader>
       <CardBody>
         <Container>
@@ -482,7 +482,7 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
           </Button>
         </Container>
       </CardBody>
-    </Card>
+    </div>
   );
 };
 
