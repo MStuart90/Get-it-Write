@@ -39,10 +39,9 @@ class EditableText extends React.Component {
     console.log('PROPS ', this.props)
     return (
       <Form 
-      style={{ height: "100%" }} 
+      style={{ backgroundColor: "#f6f5f5", height: "100%" }} 
       onSubmit={this.handleSubmit}>
         <CardHeader tag="h4">Text</CardHeader>
-
         <div
           className="formDiv"
           style={{
