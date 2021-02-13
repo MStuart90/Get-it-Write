@@ -430,9 +430,7 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
             </Col>
           </Row>
           <Button
-            outline
-            color="info"
-            size="sm"
+            style={{ marginTop: "10px" }} variant="primary" size="sm"
             onClick={() => {
               // reset casual categories
               document

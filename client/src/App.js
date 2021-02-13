@@ -53,7 +53,7 @@ const App = () => {
       </header>
       <main>
         <Row className="rows">
-          <Col
+        <Col 
             lg="6"
             sm="12"
             style={{ paddingRight: "0px" }}
@@ -72,6 +72,14 @@ const App = () => {
               setFadeInApp={setFadeIn}
             />
             <Fields selectedCategory={selectedCategory} fadeIn={fadeIn} />
+          </Col>
+          <Col
+            lg="6"
+            sm="12"
+            style={{ paddingLeft: "0px" }}
+            className="editText"
+          >
+            <EditableText />
           </Col>
         </Row>
       </main>

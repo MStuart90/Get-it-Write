@@ -41,8 +41,7 @@ class EditableText extends React.Component {
       <Form 
       // style={{ height: "50vh" }} 
       onSubmit={this.handleSubmit}>
-        <CardHeader tag="h4">Get it Write text:</CardHeader>
-
+        <CardHeader tag="h4">Text:</CardHeader>
         <div
           className="formDiv"
           style={{
@@ -50,6 +49,8 @@ class EditableText extends React.Component {
             marginLeft: "20px",
             marginRight: "20px",
             marginTop: "20px",
+            paddingLeft:"10px", 
+            paddingRight:"10px"
           }}
         >
           <Input
@@ -59,7 +60,7 @@ class EditableText extends React.Component {
             style={{ height: "35vh" }}
             value={this.state.value}
             onChange={this.handleChange.bind(this)}
-            placeholder="Get it write text goes here"
+            placeholder="We help you get it right"
           />
           <CopyToClipboard text={this.state.value}>
             <Button style={{ marginTop: "10px" }} variant="primary" size="sm">
