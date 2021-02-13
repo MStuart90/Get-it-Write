@@ -39,19 +39,23 @@
     nothing
 
 ## What command should be run to run tests?
-    none
+    npm run test
 
 ## What license is the application covered under?
-    
+    None
 
 ## Questions:
-For questions about Node File Generator, visit my GitHub page:
+For questions about Get it Write, visit my GitHub page:
     https://github.com/MStuart90/Get-it-Write
 
 ## Demonstration:
   
-  ## You may also contact me via email at:
-  
+  ## You may also contact the developers via email or through Git up at:
+  Gene Duncan: duncangw1@gmail.com, https://duncangw1.github.io
+  Mike X Hill: 
+  Rachel Moore:
+  Melanie Stuart:
+  Maria Byler:
   
   ## License:
   Click on the link to find information about the license
