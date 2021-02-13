@@ -15,7 +15,7 @@ const Fields = ({ selectedCategory, fadeIn }) => {
   console.log("THE SELECTED CATEGORY IS!!! ", selectedCategory);
 
   return (
-    <Card>
+    <div>
       <CardHeader tag="h4">Fields</CardHeader>
       <CardBody>
         <Container>
@@ -58,7 +58,7 @@ const Fields = ({ selectedCategory, fadeIn }) => {
           </Fade>
         </Container>
       </CardBody>
-    </Card>
+    </div>
   );
 };
 
