@@ -63,12 +63,12 @@ class EditableText extends React.Component {
             placeholder="We help YOU get it right"
           />
           <CopyToClipboard text={this.state.value}>
-            <Button style={{ marginTop: "10px" }} variant="primary" size="sm">
+            <Button style={{ marginTop: "10px", backgroundColor: "#ee6f57", borderColor: "#ee6f57", color: "#f6f5f5" }} variant="primary" size="sm">
               Copy
             </Button>
           </CopyToClipboard>
           <Button
-            style={{ marginLeft: "10px", marginTop: "10px" }}
+            style={{ marginLeft: "10px", marginTop: "10px", backgroundColor: "#ee6f57", borderColor: "#ee6f57", color: "#f6f5f5" }}
             variant="primary"
             size="sm"
           >
@@ -77,7 +77,7 @@ class EditableText extends React.Component {
 
           <Button id='clearButton'
           onClick={this.clearWasClicked.bind(this)}
-            style={{ marginLeft: "10px", marginTop: "10px" }}
+            style={{ marginLeft: "10px", marginTop: "10px", backgroundColor: "#ee6f57", borderColor: "#ee6f57", color: "#f6f5f5" }}
             variant="primary"
             size="sm"
           >

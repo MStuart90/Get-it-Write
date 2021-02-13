@@ -11,8 +11,8 @@
 }
 
 .editText{
-  /* border-top: 1px solid rgb(95, 95, 95);
-  border-left: 1px solid rgb(95, 95, 95); */
+  /* border-top: 1px solid rgb(95, 95, 95); */
+  border-left: 1px solid lightslategray;
   /* border-bottom: 1px solid rgb(95, 95, 95); */
   background-color: rgb(206, 204, 204);
   letter-spacing: -.5px; 

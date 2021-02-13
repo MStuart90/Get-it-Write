@@ -38,7 +38,7 @@ const submitForm = (e) => {
 }
   return (
     <div>
-      <Button style={{ marginTop: "10px" }} variant="primary" size="sm" onClick={toggle}>{buttonLabel}</Button>
+      <Button style={{ marginTop: "10px", backgroundColor: "#ee6f57", borderColor: "#ee6f57", color: "#f6f5f5" }} variant="primary" size="sm" onClick={toggle}>{buttonLabel}</Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
         <ModalHeader toggle={toggle}>Sign up</ModalHeader>
         <div className="modalForm" >
