@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Form, FormGroup, Label, Input, CardHeader } from "reactstrap";
+import { Button, Form, Input, CardHeader } from "reactstrap";
 import "./EditableText.css";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
@@ -72,7 +72,6 @@ class EditableText extends React.Component {
           >
           Clear
           </Button>{" "}
-
           <div>
             <h3></h3>
           </div>
