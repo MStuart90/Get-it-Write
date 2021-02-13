@@ -129,7 +129,7 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
   return (
     <div className="categoriesCard">
       <CardHeader tag="h4">Categories</CardHeader>
-      <CardBody>
+      <CardBody style={{height: "50%"}}>
         <Container>
           {/*=============== row holding Professional categories ===============*/}
           <Row className="categoriesRow">
@@ -144,7 +144,7 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
               </Button>
               <Collapse isOpen={isOpen1}>
                 <Card id="proCategoriesCard" className="">
-                  <CardBody>
+                  <CardBody style={{height: "50%"}}>
                     <Form>
                       <FormGroup tag="fieldset" id="professionalRadioBtns">
                         <FormGroup check>

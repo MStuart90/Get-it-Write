@@ -39,9 +39,10 @@ class EditableText extends React.Component {
     console.log('PROPS ', this.props)
     return (
       <Form 
-      // style={{ height: "50vh" }} 
+      style={{ height: "100%" }} 
       onSubmit={this.handleSubmit}>
-        <CardHeader tag="h4">Text:</CardHeader>
+        <CardHeader tag="h4">Text</CardHeader>
+
         <div
           className="formDiv"
           style={{
@@ -60,7 +61,7 @@ class EditableText extends React.Component {
             style={{ height: "35vh" }}
             value={this.state.value}
             onChange={this.handleChange.bind(this)}
-            placeholder="We help you get it right"
+            placeholder="We help YOU get it right"
           />
           <CopyToClipboard text={this.state.value}>
             <Button style={{ marginTop: "10px" }} variant="primary" size="sm">
