@@ -28,7 +28,7 @@ const Footer = (props) => {
   }
 
   return (
-    <div>
+    <div className="gradientStyle footer">
       <Row className=" mt-5">
           <Col style={{ paddingLeft: "35px"}} sm="6">
           <div class="addthis_inline_share_toolbox"></div>
@@ -126,7 +126,7 @@ const Footer = (props) => {
         </Row>
         <Row>
           <Col style={{ paddingLeft: "35px", paddingBottom: "40px"}} sm="12">
-          <div className="footer">
+          <div>
           <p>© 2021 Get it Write. All Rights Reserved</p>
           </div> 
           </Col>

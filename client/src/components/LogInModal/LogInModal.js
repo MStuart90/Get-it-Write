@@ -41,7 +41,7 @@ const submitForm = (e) => {
 }
   return (
     <div>
-      <Button color="muted" onClick={toggle}>{buttonLabel}</Button>
+      <Button style={{ marginTop: "10px" }} variant="primary" size="sm" onClick={toggle}>{buttonLabel}</Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
         <ModalHeader toggle={toggle}>Log In</ModalHeader>
         <div className="modalForm" >
