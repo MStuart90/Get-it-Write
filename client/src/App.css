@@ -54,7 +54,7 @@ html {
   /* overflow-y: hidden;  */
 }
 .gradientStyle {
-  background-image: linear-gradient(to right,#145374, #00334e);
+  background-image: linear-gradient(to bottom right ,#145374, #00334e);
 }
 
 p {

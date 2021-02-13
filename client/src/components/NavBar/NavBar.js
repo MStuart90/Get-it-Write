@@ -12,7 +12,7 @@ const Example = (props) => {
   // const toggle = () => setModal(!modal);
   return (
     <div>
-      <Navbar className="gradientStyle">
+      <Navbar style={{ height: "100%", width: "100%"}} className="gradientStyle">
       <NavbarBrand href="/" className="mr-auto"><img src={logo} alt="Logo" id='logo' /></NavbarBrand>
           <Nav navbar>
             <NavItem>
