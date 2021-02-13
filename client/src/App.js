@@ -51,18 +51,10 @@ const App = () => {
       </header>
       <main>
         <Row className="rows">
-          <Col
+        <Col
             lg="6"
             sm="12"
             style={{ paddingRight: "0px" }}
-            className="editText"
-          >
-            <EditableText />
-          </Col>
-          <Col
-            lg="6"
-            sm="12"
-            style={{ paddingLeft: "0px" }}
             className="columns"
           >
             <Categories
@@ -71,11 +63,19 @@ const App = () => {
             />
             <Fields selectedCategory={selectedCategory} fadeIn={fadeIn} />
           </Col>
+          <Col
+            lg="6"
+            sm="12"
+            style={{ paddingLeft: "0px" }}
+            className="editText"
+          >
+            <EditableText />
+          </Col>
         </Row>
       </main>
       <footer>
         <Row>
-          <Col lg="12" className="footer fixed-bottom">
+          <Col lg="12" className="footer">
             <Footer />
           </Col>
         </Row>
