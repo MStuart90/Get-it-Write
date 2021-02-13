@@ -15,7 +15,7 @@ const App = () => {
     <div>
       <header className="header">
         <Row>
-          <Col lg="12" className="navBar">
+          <Col lg="10" className="navBar">
             <NavBar />
             {/* <LogInModal /> */}
           </Col>
@@ -23,10 +23,10 @@ const App = () => {
       </header>
       <main>
         <Row className="rows">
-          <Col lg="6" sm="12"style={{ paddingRight: "0px" }} className="editText">
+          <Col lg="6" sm="12" style={{ width: "50vw", paddingRight: "0px" }} className="editText">
             <EditableText />
           </Col>
-          <Col lg="6" sm="12" style={{ paddingLeft: "0px" }} className="columns">
+          <Col lg="6" sm="12" style={{ width: "50vw", paddingLeft: "0px" }} className="columns">
             <Categories
               setSelectedCategoryInApp={setSelectedCategory}
               setFadeInApp={setFadeIn}
