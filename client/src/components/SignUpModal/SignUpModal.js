@@ -38,7 +38,7 @@ const submitForm = (e) => {
 }
   return (
     <div>
-      <Button color="muted" onClick={toggle}>{buttonLabel}</Button>
+      <Button id="SignUp" onClick={toggle}>{buttonLabel}</Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
         <ModalHeader toggle={toggle}>Sign up</ModalHeader>
         <div className="modalForm" >
@@ -46,20 +46,20 @@ const submitForm = (e) => {
         <form onSubmit={submitForm}>
 
         
-        <label for="username" sm={2}>username</label>
+        <label for="username" sm={2}>Username</label>
      
      <input type="text" onChange={handleUsernameChange} value={state.username} name="username" id="username" placeholder="username" />
   
      
         <label for="exampleEmail" sm={2}>Email</label>
      
-          <input type="email" onChange={handleEmailChange} value={state.email} name="email" id="exampleEmail" placeholder="with a placeholder" />
+          <input type="email" onChange={handleEmailChange} value={state.email} name="email" id="exampleEmail" placeholder="email" />
        
     
     
         <label for="examplePassword" sm={2}>Password</label>
        
-          <input type="password" onChange={handlePasswordChange} value={state.password} name="password" id="examplePassword" placeholder="password placeholder" />
+          <input type="password" onChange={handlePasswordChange} value={state.password} name="password" id="examplePassword" placeholder="password" />
         {/* <input type="submit" value="Submit" /> */}
       
       </form>
