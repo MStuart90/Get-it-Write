@@ -30,12 +30,12 @@ const Footer = (props) => {
   return (
     <Row className=" mt-5">
 
-        <Col sm="4">
+        <Col style={{ padding: "35px", paddingBottom: "40px"}} sm="4">
         <div class="addthis_inline_share_toolbox"></div>
         </Col>
         <Col sm="4">
         <div>
-       <p onClick={toggle} style={{ marginBottom: '1rem' }}>Developers</p>
+       <p onMouseEnter={toggle} style={{ marginBottom: '1rem' }}>Developers</p>
        <Collapse
           isOpen={collapse}
           onEntering={onEntering}

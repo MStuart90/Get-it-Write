@@ -51,7 +51,7 @@ const App = () => {
       </header>
       <main>
         <Row className="rows">
-        <Col
+        <Col 
             lg="6"
             sm="12"
             style={{ paddingRight: "0px" }}
