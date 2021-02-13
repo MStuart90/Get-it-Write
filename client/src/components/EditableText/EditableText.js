@@ -61,7 +61,7 @@ class EditableText extends React.Component {
             style={{ height: "35vh" }}
             value={this.state.value}
             onChange={this.handleChange.bind(this)}
-            placeholder="We help YOU get it right"
+            placeholder="We help you get it right"
           />
           <CopyToClipboard text={this.state.value}>
             <Button style={{ marginTop: "10px" }} variant="primary" size="sm">
