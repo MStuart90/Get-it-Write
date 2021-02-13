@@ -3,7 +3,7 @@
 }
 
 .columns{
-  border: 1px solid rgb(95, 95, 95);
+  /* border: 1px solid rgb(95, 95, 95); */
   background-color: white;
   margin-left: 0px;
   padding-left: 0px;
@@ -11,9 +11,9 @@
 }
 
 .editText{
-  border-top: 1px solid rgb(95, 95, 95);
-  border-left: 1px solid rgb(95, 95, 95);
-  border-bottom: 1px solid rgb(95, 95, 95);
+  /* border-top: 1px solid rgb(95, 95, 95);
+  border-left: 1px solid rgb(95, 95, 95); */
+  /* border-bottom: 1px solid rgb(95, 95, 95); */
   background-color: rgb(206, 204, 204);
   letter-spacing: -.5px; 
 }
@@ -47,3 +47,8 @@
 /* main{
   height: calc(100vh - 100px);
 } */
+
+html {
+  overflow-x: hidden; 
+  /* overflow-y: hidden;  */
+}

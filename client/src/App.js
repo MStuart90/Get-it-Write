@@ -75,7 +75,7 @@ const App = () => {
       </main>
       <footer>
         <Row>
-          <Col lg="12" className="footer">
+          <Col lg="12" className="footer fixed-bottom">
             <Footer />
           </Col>
         </Row>
