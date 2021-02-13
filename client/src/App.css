@@ -48,6 +48,7 @@
   height: calc(100vh - 100px);
 } */
 
-/* html {
-  overflow: hidden; 
-} */
+html {
+  overflow-x: hidden; 
+  /* overflow-y: hidden;  */
+}

@@ -15,7 +15,7 @@ const Example = (props) => {
   // const toggleNavbar = () => setCollapsed(!collapsed);
   return (
     <div>
-      <Navbar style={{ width: "100%", height: "100%", position: "absolute" }} color="faded" light>
+      <Navbar color="faded" light>
       <NavbarBrand href="/" className="mr-auto"><img src={logo} alt="Logo" id='logo' /></NavbarBrand>
         {/* <NavbarBrand href="/" className="mr-auto">Get It Write</NavbarBrand> */}
         {/* <NavbarToggler onClick={toggleNavbar} className="mr-2" /> */}

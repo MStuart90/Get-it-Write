@@ -28,7 +28,9 @@ class EditableText extends React.Component {
 
   render() {
     return (
-      <Form style={{ height: "50vw" }} onSubmit={this.handleSubmit}>
+      <Form 
+      // style={{ height: "50vh" }} 
+      onSubmit={this.handleSubmit}>
         <CardHeader tag="h4">Get it Write text:</CardHeader>
 
         <div
@@ -44,7 +46,7 @@ class EditableText extends React.Component {
             className="textArea"
             id="editableTextArea"
             type="textarea"
-            style={{ height: "35vw" }}
+            style={{ height: "35vh" }}
             value={this.state.value}
             onChange={this.handleChange.bind(this)}
             placeholder="Get it write text goes here"

@@ -43,7 +43,7 @@ const App = () => {
     <div>
       <header className="header">
         <Row>
-          <Col lg="10" className="navBar">
+          <Col lg="12" className="navBar">
             <NavBar />
             {/* <LogInModal /> */}
           </Col>
