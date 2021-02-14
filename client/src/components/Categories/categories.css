@@ -1,5 +1,8 @@
 .categoriesBtn {
   width: 100%;
+  background-color: #ee6f57; 
+  border-color:#ee6f57; 
+  color: #f6f5f5; 
 }
 
 .categoriesRow {

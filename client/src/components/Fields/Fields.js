@@ -15,7 +15,7 @@ const Fields = ({ selectedCategory, fadeIn }) => {
   console.log("THE SELECTED CATEGORY IS!!! ", selectedCategory);
 
   return (
-    <div>
+    <div style={{backgroundColor: "#f6f5f5", height: "50%"}}>
       <CardHeader tag="h4">Fields</CardHeader>
       <CardBody>
         <Container>
