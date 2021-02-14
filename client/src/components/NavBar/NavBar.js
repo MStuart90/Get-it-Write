@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Navbar, NavbarBrand, Nav, NavItem } from 'reactstrap';
-import logo from './logo.png';
+import { Navbar, NavbarBrand, Nav, NavItem, Button } from 'reactstrap';
+import logo from './logosmall.png';
 import LogInModal from '../LogInModal/LogInModal';
 import SignUpModal from '../SignUpModal/SignUpModal'
 import "./navbar.css";
@@ -18,7 +18,11 @@ const Example = (props) => {
             <NavItem>
               <LogInModal buttonLabel={'Log In'}/>
               <SignUpModal  buttonLabel={'Sign Up'}/>
+
             </NavItem>
+            {/* <Button style={{ marginTop: "10px" }}> */}
+            <SignUpModal buttonLabel={'Sign Up'}/>
+            {/* </Button> */}
             <NavItem>
             </NavItem>
           </Nav>
