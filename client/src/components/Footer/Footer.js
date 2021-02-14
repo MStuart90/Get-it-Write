@@ -29,11 +29,11 @@ const Footer = (props) => {
 
   return (
     <div>
-      <Row className=" mt-5">
-          <Col style={{ paddingLeft: "35px"}} sm="6">
+      <Row >
+          <Col style={{ paddingLeft: "35px", marginTop:'10px'}} sm="6">
           <div class="addthis_inline_share_toolbox"></div>
           </Col>
-          <Col style={{ paddingBottom: "40px"}} sm="6">
+          <Col style={{ paddingBottom: "0px"}} sm="6">
           <div>
         <p onMouseEnter={toggle} style={{ marginBottom: '1rem' }}>Developers</p>
         <Collapse
@@ -125,7 +125,7 @@ const Footer = (props) => {
           </Col>
         </Row>
         <Row>
-          <Col style={{ paddingLeft: "35px", paddingBottom: "40px"}} sm="12">
+          <Col style={{ paddingLeft: "35px", paddingBottom: "0px"}} sm="12">
           <div className="footer">
           <p>© 2021 Get it Write. All Rights Reserved</p>
           </div> 
