@@ -127,15 +127,15 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
   }
 
   return (
-    <div className="categoriesCard">
+    <div style={{backgroundColor: "#f6f5f5", height: "50%"}} className="categoriesCard">
       <CardHeader tag="h4">Categories</CardHeader>
-      <CardBody style={{height: "50%"}}>
+      <CardBody>
         <Container>
           {/*=============== row holding Professional categories ===============*/}
           <Row className="categoriesRow">
             <Col>
               <Button
-                color="info"
+                style={{backgroundColor: "#00334e", borderColor: "#00334e", color: "#f6f5f5"}}
                 onClick={toggle1}
                 className="categoriesBtn"
                 id="professionalCategoryBtn"
@@ -143,8 +143,8 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
                 Professional
               </Button>
               <Collapse isOpen={isOpen1}>
-                <Card id="proCategoriesCard" className="">
-                  <CardBody style={{height: "50%"}}>
+                <Card style={{backgroundColor: "#145374", borderColor: "#145374", color: "#f6f5f5"}} id="proCategoriesCard" className="">
+                  <CardBody>
                     <Form>
                       <FormGroup tag="fieldset" id="professionalRadioBtns">
                         <FormGroup check>
@@ -270,7 +270,7 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
           <Row className="categoriesRow">
             <Col>
               <Button
-                color="info"
+                style={{backgroundColor: "#00334e", borderColor: "#00334e", color: "#f6f5f5"}}
                 onClick={toggle2}
                 className="categoriesBtn"
                 id="casualCategoryBtn"
@@ -278,7 +278,7 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
                 Casual
               </Button>
               <Collapse isOpen={isOpen2}>
-                <Card id="casualCategoriesCard" className="">
+                <Card style={{backgroundColor: "#145374", borderColor: "#145374", color: "#f6f5f5"}} id="casualCategoriesCard" className="">
                   <CardBody>
                     <Form>
                       <FormGroup tag="fieldset" id="casualRadioBtns">
@@ -430,7 +430,7 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
             </Col>
           </Row>
           <Button
-            style={{ marginTop: "10px" }} variant="primary" size="sm"
+            style={{ marginTop: "10px", backgroundColor: "#ee6f57", borderColor: "#ee6f57", color: "#f6f5f5" }} variant="primary" size="sm"
             onClick={() => {
               // reset casual categories
               document
