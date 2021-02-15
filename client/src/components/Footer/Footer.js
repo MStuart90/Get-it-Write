@@ -127,6 +127,7 @@ const Footer = (props) => {
         <Row>
           <Col style={{ paddingLeft: "35px", paddingBottom: "0px"}} sm="12">
           <div className="footer">
+
           <p>© 2021 Get it Write. All Rights Reserved</p>
           </div> 
           </Col>
