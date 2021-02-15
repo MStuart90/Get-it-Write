@@ -58,7 +58,7 @@ class EditableText extends React.Component {
             className="textArea"
             id="editableTextArea"
             type="textarea"
-            style={{ height: "35vh" }}
+            style={{ height: "50vh" }}
             value={this.state.value}
             onChange={this.handleChange.bind(this)}
             placeholder="We help you get it right"
