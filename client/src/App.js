@@ -9,7 +9,8 @@ import Fields from "./components/Fields/Fields";
 // import LogInModal from "./components/LogInModal/LogInModal";
 
 const App = () => {
-  const [categoryText, setCategoryText] = useState('')
+  const [categoryText, setCategoryText] = useState("");
+  const [updatedCategoryText, setUpdatedCategoryText] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
   const [fadeIn, setFadeIn] = useState(false);
 
@@ -22,7 +23,6 @@ const App = () => {
       "Hi {{UNIQUE_PERSON}},\n\nHope you’re doing well!\nI just wanted to follow up and ask whether you have any news on {{UNIQUE_SUBJECT}}?\nLooking forward to hearing from you.\n\nBest regards, {{firstName}}.",
     ];
 
-    const selectedCategory = localStorage.getItem("selectedCategory");
     if (selectedCategory === null) {
       return;
     } else {
@@ -34,12 +34,10 @@ const App = () => {
 
         let indexLocation = searchNumber - 1;
 
-     //   document.getElementById("editableTextArea").value =
-       //   proOptions[indexLocation];
-       setCategoryText(proOptions[indexLocation])
+        setCategoryText(proOptions[indexLocation]);
       }
     }
-  });
+  }, [selectedCategory]);
 
   return (
     <div>
@@ -59,7 +57,10 @@ const App = () => {
             style={{ paddingRight: "0px" }}
             className="editText"
           >
-            <EditableText categoryText={categoryText}/>
+            <EditableText
+              categoryText={categoryText}
+              updatedCategoryText={updatedCategoryText}
+            />
           </Col>
           <Col
             lg="6"
@@ -71,7 +72,12 @@ const App = () => {
               setSelectedCategoryInApp={setSelectedCategory}
               setFadeInApp={setFadeIn}
             />
-            <Fields selectedCategory={selectedCategory} fadeIn={fadeIn} />
+            <Fields
+              selectedCategory={selectedCategory}
+              fadeIn={fadeIn}
+              categoryText={categoryText}
+              setUpdatedCategoryText={setUpdatedCategoryText}
+            />
           </Col>
         </Row>
       </main>
