@@ -54,18 +54,7 @@ const App = () => {
           <Col
             lg="6"
             sm="12"
-            style={{ paddingRight: "0px" }}
-            className="editText"
-          >
-            <EditableText
-              categoryText={categoryText}
-              updatedCategoryText={updatedCategoryText}
-            />
-          </Col>
-          <Col
-            lg="6"
-            sm="12"
-            style={{ paddingLeft: "0px" }}
+            style={{ paddingRight: "0px", height: "100%"}}
             className="columns"
           >
             <Categories
@@ -79,11 +68,19 @@ const App = () => {
               setUpdatedCategoryText={setUpdatedCategoryText}
             />
           </Col>
+          <Col 
+            lg="6"
+            sm="12"
+            style={{ paddingLeft: "0px" }}
+            className="editText"
+          >
+            <EditableText categoryText={categoryText} updatedCategoryText={updatedCategoryText}/>
+          </Col>
         </Row>
       </main>
       <footer>
         <Row>
-          <Col lg="12" className="footer fixed-bottom">
+          <Col  style={{ height: "100%", width: "100%"}} lg="12" className=" gradientStyle footer">
             <Footer />
           </Col>
         </Row>

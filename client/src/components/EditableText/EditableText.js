@@ -39,10 +39,9 @@ class EditableText extends React.Component {
     console.log('PROPS ', this.props)
     return (
       <Form 
-      // style={{ height: "50vh" }} 
+      style={{ backgroundColor: "#f6f5f5", height: "100%" }} 
       onSubmit={this.handleSubmit}>
-        <CardHeader tag="h4">Get it Write text:</CardHeader>
-
+        <CardHeader tag="h4">Text</CardHeader>
         <div
           className="formDiv"
           style={{
@@ -50,6 +49,8 @@ class EditableText extends React.Component {
             marginLeft: "20px",
             marginRight: "20px",
             marginTop: "20px",
+            paddingLeft:"10px", 
+            paddingRight:"10px"
           }}
         >
           <Input
@@ -59,15 +60,15 @@ class EditableText extends React.Component {
             style={{ height: "35vh" }}
             value={this.state.value}
             onChange={this.handleChange.bind(this)}
-            placeholder="Get it write text goes here"
+            placeholder="We help you get it right"
           />
           <CopyToClipboard text={this.state.value}>
-            <Button style={{ marginTop: "10px" }} variant="primary" size="sm">
+            <Button style={{ marginTop: "10px", backgroundColor: "#ee6f57", borderColor: "#ee6f57", color: "#f6f5f5" }} variant="primary" size="sm">
               Copy
             </Button>
           </CopyToClipboard>
           <Button
-            style={{ marginLeft: "10px", marginTop: "10px" }}
+            style={{ marginLeft: "10px", marginTop: "10px", backgroundColor: "#ee6f57", borderColor: "#ee6f57", color: "#f6f5f5" }}
             variant="primary"
             size="sm"
           >
@@ -76,7 +77,7 @@ class EditableText extends React.Component {
 
           <Button id='clearButton'
           onClick={this.clearWasClicked.bind(this)}
-            style={{ marginLeft: "10px", marginTop: "10px" }}
+            style={{ marginLeft: "10px", marginTop: "10px", backgroundColor: "#ee6f57", borderColor: "#ee6f57", color: "#f6f5f5" }}
             variant="primary"
             size="sm"
           >
