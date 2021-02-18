@@ -82,7 +82,7 @@ router.post(
       if (twitter) profileFields.social.twitter = twitter;
       if (facebook) profileFields.social.facebook = facebook;
       if (linkedin) profileFields.social.linkedin = linkedin;
-      if (instagram) profileFields.social.instagram = instgram;
+      if (instagram) profileFields.social.instagram = instagram;
 
       try {
         let profile = await Profile.findOne({ user: req.user.id });
@@ -90,7 +90,7 @@ router.post(
         if(profile) {
           //Update user profile
           profile = await Profile.findOneAndUpdate(
-            { user: req.user.id}, 
+            { user: req.user.id }, 
             { $set: profileFields  },
             { new: true }
           );
@@ -100,9 +100,9 @@ router.post(
 
         //Create
         profile = new Profile(profileFields);
-
-        await Profile.save();
+        await profile.save();
         res.json(profile);
+
       } catch (err) {
         console.error(err.message);
         res.status(500).send('Server Error');
@@ -122,9 +122,21 @@ router.get('/', async (_req, res) => {
     console.error(err.message);
     res.status(500).send('Server Error');
   }
-
 });
 
-
+// @route    GET api/profile/user/:user_id
+// @desc     Get profile by user ID
+// @access   Public
+router.get('/user/:user_id', async (req, res) => {
+  try {
+    const profile = await Profile.findOne({ user: req.params.user_id }).populate('user', 
+    ['name', 'avatar']);
+    if(!profile) return res.status(400).json({ msg: 'There is no profile for this user' });
+    res.json(profile);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server Error');
+  }
+});
 
 module.exports = router;

@@ -45,6 +45,7 @@ async (req, res) => {
             d: 'mm' //default avatar if user does not have a avatar set
         });
 
+
         user = new User({
             name,
             email,
@@ -52,7 +53,7 @@ async (req, res) => {
             password
         });
 
-        //Encrypt password
+        //Encrypt user password
         const salt = await bcrypt.genSalt(15); //15 rounds cause that's how we roll
         user.password = await bcrypt.hash(password, salt);
         await user.save();
@@ -69,10 +70,10 @@ async (req, res) => {
           jwt.sign(
             payload,
             config.get('jwtSecret'),
-            { expiresIn: 99999 },
+            { expiresIn: 99999 }, //this needs the be changed back to 20 minutes
             (err, token) => {
               if (err) throw err;
-              res.json({ token }); //"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjAxZTU4N2E3ZjU4MDMyNmVjMzdmNjkyIn0sImlhdCI6MTYxMjYwMTQ2OSwiZXhwIjoxNjEyNzAxNDY4fQ.ZHAI9ej2-VfNipTML_ZEsHfcFqQB_TaQG5R5sUabBuI"
+              res.json({ token }); 
             }
           );
         } catch (err) {
@@ -83,3 +84,6 @@ async (req, res) => {
     );
 
 module.exports = router;
+
+
+// Johnny Dallas Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjAyZWJhZTdlNDJhMTExNTk4N2IyOWMyIn0sImlhdCI6MTYxMzY3NTI0MiwiZXhwIjoxNjEzNzc1MjQxfQ.TdBPdoJjNAbTO75DKKcOd4GIkmn78dlJ9hZmK6e_MWI
