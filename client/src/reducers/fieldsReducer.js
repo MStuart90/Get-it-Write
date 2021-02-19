@@ -45,6 +45,21 @@ export const fieldsReducer = (state, action) => {
         ...state,
         UNIQUE_SUBJECT: action.value,
       };
+    case "UNIQUE_TIME":
+      return {
+        ...state,
+        UNIQUE_TIME: action.value,
+      };
+    case "reasoning":
+      return {
+        ...state,
+        reasoning: action.value,
+      };
+    case "sickness":
+      return {
+        ...state,
+        sickness: action.value,
+      };
     case "RESET":
       return {
         firstName: "{{firstName}}",
@@ -56,6 +71,9 @@ export const fieldsReducer = (state, action) => {
         supportPhone: "{{supportPhone}}",
         UNIQUE_PERSON: "{{UNIQUE_PERSON}}",
         UNIQUE_SUBJECT: "{{UNIQUE_SUBJECT}}",
+        UNIQUE_TIME: "{{UNIQUE_TIME}}",
+        reasoning: "{{reasoning}}",
+        sickness: "{{sickness}}",
       };
     default:
       return state;

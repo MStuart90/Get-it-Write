@@ -22,8 +22,10 @@ const App = () => {
       // console.log("editableTxt reading category: ", selectedCategory);
       let editableTxt = selectedCategory;
       if (editableTxt.startsWith("pro")) {
-        let searchNumber = editableTxt.charAt(editableTxt.length - 1);
-        // console.log("search number: ", searchNumber);
+        let searchNumber =
+          editableTxt.charAt(editableTxt.length - 2) +
+          editableTxt.charAt(editableTxt.length - 1);
+        console.log("search number: ", searchNumber);
 
         let indexLocation = searchNumber - 1;
 
@@ -42,36 +44,43 @@ const App = () => {
           </Col>
         </Row>
       </header>
-     <FieldsContextProvider>
-      <main>
-        <Row  style={{height: "100%", backgroundColor: "#f6f5f5"}}className="rows">
-          <Col
-            lg="6"
-            sm="12"
-            style={{ paddingRight: "0px", height: "100%", backgroundColor: "#f6f5f5"}}
-            className="columns"
+      <FieldsContextProvider>
+        <main>
+          <Row
+            style={{ height: "100%", backgroundColor: "#f6f5f5" }}
+            className="rows"
           >
-            <Categories
-              setSelectedCategoryInApp={setSelectedCategory}
-              setFadeInApp={setFadeIn}
-            />
-            <Fields
-              selectedCategory={selectedCategory}
-              fadeIn={fadeIn}
-              categoryText={categoryText}
-            />
-          </Col>
-          <Col 
-            lg="6"
-            sm="12"
-            style={{ paddingLeft: "0px" }}
-            className="editText"
-          >
-            <EditableText categoryText={categoryText} />
-          </Col>
-        </Row>
-      </main>
-    </FieldsContextProvider>
+            <Col
+              lg="6"
+              sm="12"
+              style={{
+                paddingRight: "0px",
+                height: "100%",
+                backgroundColor: "#f6f5f5",
+              }}
+              className="columns"
+            >
+              <Categories
+                setSelectedCategoryInApp={setSelectedCategory}
+                setFadeInApp={setFadeIn}
+              />
+              <Fields
+                selectedCategory={selectedCategory}
+                fadeIn={fadeIn}
+                categoryText={categoryText}
+              />
+            </Col>
+            <Col
+              lg="6"
+              sm="12"
+              style={{ paddingLeft: "0px" }}
+              className="editText"
+            >
+              <EditableText categoryText={categoryText} />
+            </Col>
+          </Row>
+        </main>
+      </FieldsContextProvider>
       <footer>
         <Row>
           <Col
