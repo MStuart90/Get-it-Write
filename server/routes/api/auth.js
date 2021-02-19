@@ -35,7 +35,8 @@ router.post(
     }
 
     const { email, password } = req.body;
-
+    // NOTE INVALID CREDENTIALS IS RETURNED FOR EMAIL NOT FOUND AND WRONG PASSWORD FOR SECURITY REASONS. 
+    // WE DO NOT WANT TO VALIDATE A USER EMAIL LOOKUP
     try {
       let user = await User.findOne({ email });
 

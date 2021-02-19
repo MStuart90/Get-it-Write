@@ -57,7 +57,7 @@ class EditableText extends React.Component {
             className="textArea"
             id="editableTextArea"
             type="textarea"
-            style={{ height: "35vh" }}
+            style={{ height: "50vh" }}
             value={this.state.value}
             onChange={this.handleChange.bind(this)}
             placeholder="We help you get it right"
@@ -68,7 +68,7 @@ class EditableText extends React.Component {
             </Button>
           </CopyToClipboard>
           <Button
-            style={{ marginLeft: "10px", marginTop: "10px", backgroundColor: "#ee6f57", borderColor: "#ee6f57", color: "#f6f5f5" }}
+            style={{ marginLeft: "15px", marginTop: "10px", backgroundColor: "#ee6f57", borderColor: "#ee6f57", color: "#f6f5f5" }}
             variant="primary"
             size="sm"
           >
@@ -82,6 +82,14 @@ class EditableText extends React.Component {
             size="sm"
           >
           Clear
+          </Button>{" "}
+          <Button id='clearButton'
+          onClick={this.clearWasClicked.bind(this)}
+            style={{ float: "right", marginLeft: "10px", marginTop: "10px", backgroundColor: "#ee6f57", borderColor: "#ee6f57", color: "#f6f5f5" }}
+            variant="primary"
+            size="sm"
+          >
+          Copy to Favorites
           </Button>{" "}
           <div>
             <h3></h3>
