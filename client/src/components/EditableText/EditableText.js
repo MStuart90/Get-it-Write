@@ -83,18 +83,25 @@ const EditableText = (props) => {
           size="sm"
         >
           Clear
-          </Button>{" "}
-          <Button id='clearButton'
-          onClick={this.clearWasClicked.bind(this)}
-            style={{ float: "right", marginLeft: "10px", marginTop: "10px", backgroundColor: "#ee6f57", borderColor: "#ee6f57", color: "#f6f5f5" }}
-            variant="primary"
-            size="sm"
-          >
+        </Button>{" "}
+        <Button
+          id="clearButton"
+          // onClick={this.clearWasClicked.bind(this)}
+          style={{
+            float: "right",
+            marginLeft: "10px",
+            marginTop: "10px",
+            backgroundColor: "#ee6f57",
+            borderColor: "#ee6f57",
+            color: "#f6f5f5",
+          }}
+          variant="primary"
+          size="sm"
+        >
           Copy to Favorites
-          </Button>{" "}
-          <div>
-            <h3></h3>
-          </div>
+        </Button>{" "}
+        <div>
+          <h3></h3>
         </div>
       </div>
     </Form>
