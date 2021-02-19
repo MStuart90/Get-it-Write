@@ -53,7 +53,7 @@ const Fields = ({ fadeIn, categoryText, setUpdatedCategoryText }) => {
   };
 
   return (
-    <div style={{backgroundColor: "#f6f5f5", height: "50%"}}>
+    <div style={{backgroundColor: "#f6f5f5", height: "100%"}}>
       <CardHeader tag="h4">Fields</CardHeader>
       <CardBody>
         <Container>

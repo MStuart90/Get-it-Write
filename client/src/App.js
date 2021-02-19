@@ -50,11 +50,11 @@ const App = () => {
         </Row>
       </header>
       <main>
-        <Row className="rows">
+        <Row  style={{height: "100%", backgroundColor: "#f6f5f5"}}className="rows">
           <Col
             lg="6"
             sm="12"
-            style={{ paddingRight: "0px", height: "100%"}}
+            style={{ paddingRight: "0px", height: "100%", backgroundColor: "#f6f5f5"}}
             className="columns"
           >
             <Categories
