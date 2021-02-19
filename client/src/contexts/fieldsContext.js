@@ -13,6 +13,9 @@ const fieldsState = {
   supportPhone: "{{supportPhone}}",
   UNIQUE_PERSON: "{{UNIQUE_PERSON}}",
   UNIQUE_SUBJECT: "{{UNIQUE_SUBJECT}}",
+  UNIQUE_TIME: "{{UNIQUE_TIME}}",
+  reasoning: "{{reasoning}}",
+  sickness: "{{sickness}}",
 };
 
 const FieldsContextProvider = (props) => {

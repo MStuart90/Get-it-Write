@@ -171,17 +171,17 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
                                 <option value="proOption1-default" id="default">
                                   Select
                                 </option>
-                                <option value="proOption1-1">
+                                <option value="proOption1-01">
                                   Unsolicited
                                 </option>
-                                <option value="proOption1-2">Spam</option>
-                                <option value="proOption1-3">
+                                <option value="proOption1-02">Spam</option>
+                                <option value="proOption1-03">
                                   On Vacation
                                 </option>
-                                <option value="proOption1-4">
+                                <option value="proOption1-04">
                                   Out of Office
                                 </option>
-                                <option value="proOption1-5">Follow Up</option>
+                                <option value="proOption1-05">Follow Up</option>
                               </Input>
                             </FormGroup>
                           </Collapse>
@@ -209,17 +209,17 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
                                 <option value="proOption2-default" id="default">
                                   Select
                                 </option>
-                                <option value="proOption2-1">
+                                <option value="proOption2-06">
                                   I'm not available
                                 </option>
-                                <option value="proOption2-2">
+                                <option value="proOption2-07">
                                   I'll get back to you
                                 </option>
-                                <option value="proOption2-3">Thank you</option>
-                                <option value="proOption2-4">
+                                <option value="proOption2-08">Thank you</option>
+                                <option value="proOption2-09">
                                   Setup Meeting
                                 </option>
-                                <option value="proOption2-5">Sick Day</option>
+                                <option value="proOption2-10">Sick Day</option>
                               </Input>
                             </FormGroup>
                           </Collapse>
@@ -247,16 +247,16 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
                                 <option value="proOption3-default" id="default">
                                   Select
                                 </option>
-                                <option value="proOption3-1">
+                                <option value="proOption3-11">
                                   Assignment Extension
                                 </option>
-                                <option value="proOption3-2">
+                                <option value="proOption3-12">
                                   Office Hours
                                 </option>
-                                <option value="proOption3-3">
+                                <option value="proOption3-13">
                                   Absence Request
                                 </option>
-                                <option value="proOption3-4">
+                                <option value="proOption3-14">
                                   Question About...
                                 </option>
                               </Input>
