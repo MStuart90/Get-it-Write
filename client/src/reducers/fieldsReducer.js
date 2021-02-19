@@ -60,6 +60,11 @@ export const fieldsReducer = (state, action) => {
         ...state,
         sickness: action.value,
       };
+    case "link":
+      return {
+        ...state,
+        link: action.value,
+      };
     case "RESET":
       return {
         firstName: "{{firstName}}",
@@ -74,6 +79,7 @@ export const fieldsReducer = (state, action) => {
         UNIQUE_TIME: "{{UNIQUE_TIME}}",
         reasoning: "{{reasoning}}",
         sickness: "{{sickness}}",
+        link: "{{link}}",
       };
     default:
       return state;
