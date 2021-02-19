@@ -16,6 +16,7 @@ const fieldsState = {
   UNIQUE_TIME: "{{UNIQUE_TIME}}",
   reasoning: "{{reasoning}}",
   sickness: "{{sickness}}",
+  link: "{{link}}",
 };
 
 const FieldsContextProvider = (props) => {

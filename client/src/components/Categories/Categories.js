@@ -326,16 +326,16 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
                                 >
                                   Select
                                 </option>
-                                <option value="casualOption1-1">
+                                <option value="casualOption1-15">
                                   Thanks for the reply
                                 </option>
-                                <option value="casualOption1-2">
+                                <option value="casualOption1-16">
                                   Long time no see
                                 </option>
-                                <option value="casualOption1-3">
+                                <option value="casualOption1-17">
                                   How are you?
                                 </option>
-                                <option value="casualOption1-4">
+                                <option value="casualOption1-18">
                                   Check your phone
                                 </option>
                               </Input>
@@ -368,19 +368,19 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
                                 >
                                   Select
                                 </option>
-                                <option value="casualOption2-1">
+                                <option value="casualOption2-19">
                                   Can't make it
                                 </option>
-                                <option value="casualOption2-2">
+                                <option value="casualOption2-20">
                                   I'm down!
                                 </option>
-                                <option value="casualOption2-3">
+                                <option value="casualOption2-21">
                                   Weekend Plans
                                 </option>
-                                <option value="casualOption2-4">
+                                <option value="casualOption2-22">
                                   You're awesome
                                 </option>
-                                <option value="casualOption2-5">
+                                <option value="casualOption2-23">
                                   Check this out L0L
                                 </option>
                               </Input>
@@ -414,14 +414,16 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
                                 >
                                   Select
                                 </option>
-                                <option value="casualOption3-1">
+                                <option value="casualOption3-24">
                                   New phone, who dis?
                                 </option>
-                                <option value="casualOption3-2">
+                                <option value="casualOption3-25">
                                   Rick Rolled
                                 </option>
-                                <option value="casualOption3-3">Angry</option>
-                                <option value="casualOption3-4">
+                                <option value="casualOption3-26">
+                                  Basket Weaving
+                                </option>
+                                <option value="casualOption3-27">
                                   Happy Birthday
                                 </option>
                               </Input>

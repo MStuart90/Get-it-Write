@@ -21,16 +21,14 @@ const App = () => {
     } else {
       // console.log("editableTxt reading category: ", selectedCategory);
       let editableTxt = selectedCategory;
-      if (editableTxt.startsWith("pro")) {
-        let searchNumber =
-          editableTxt.charAt(editableTxt.length - 2) +
-          editableTxt.charAt(editableTxt.length - 1);
-        console.log("search number: ", searchNumber);
+      let searchNumber =
+        editableTxt.charAt(editableTxt.length - 2) +
+        editableTxt.charAt(editableTxt.length - 1);
+      console.log("search number: ", searchNumber);
 
-        let indexLocation = searchNumber - 1;
+      let indexLocation = searchNumber - 1;
 
-        setCategoryText(indexLocation);
-      }
+      setCategoryText(indexLocation);
     }
   }, [selectedCategory]);
 
