@@ -97,6 +97,7 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
         .getElementById("casualCategoriesCard")
         .classList.add("disabledCategory");
       document.getElementById("casualCategoryBtn").classList.add("disabledBtn");
+      setIsOpen2(false);
     }
     // targeting the casual category
     else if (props.target.id.startsWith("cas", 0) === true) {
@@ -109,6 +110,7 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
       document
         .getElementById("professionalCategoryBtn")
         .classList.add("disabledBtn");
+      setIsOpen1(false);
     }
   }
 
@@ -283,7 +285,7 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
                 className="categoriesBtn"
                 id="casualCategoryBtn"
               >
-                Casual
+                Personal
               </Button>
               <Collapse isOpen={isOpen2}>
                 <Card
