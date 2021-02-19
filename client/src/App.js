@@ -42,36 +42,36 @@ const App = () => {
           </Col>
         </Row>
       </header>
-      <FieldsContextProvider>
-        <main>
-          <Row className="rows">
-            <Col
-              lg="6"
-              sm="12"
-              style={{ paddingRight: "0px", height: "100%" }}
-              className="columns"
-            >
-              <Categories
-                setSelectedCategoryInApp={setSelectedCategory}
-                setFadeInApp={setFadeIn}
-              />
-              <Fields
-                selectedCategory={selectedCategory}
-                fadeIn={fadeIn}
-                categoryText={categoryText}
-              />
-            </Col>
-            <Col
-              lg="6"
-              sm="12"
-              style={{ paddingLeft: "0px" }}
-              className="editText"
-            >
-              <EditableText categoryText={categoryText} />
-            </Col>
-          </Row>
-        </main>
-      </FieldsContextProvider>
+     <FieldsContextProvider>
+      <main>
+        <Row  style={{height: "100%", backgroundColor: "#f6f5f5"}}className="rows">
+          <Col
+            lg="6"
+            sm="12"
+            style={{ paddingRight: "0px", height: "100%", backgroundColor: "#f6f5f5"}}
+            className="columns"
+          >
+            <Categories
+              setSelectedCategoryInApp={setSelectedCategory}
+              setFadeInApp={setFadeIn}
+            />
+            <Fields
+              selectedCategory={selectedCategory}
+              fadeIn={fadeIn}
+              categoryText={categoryText}
+            />
+          </Col>
+          <Col 
+            lg="6"
+            sm="12"
+            style={{ paddingLeft: "0px" }}
+            className="editText"
+          >
+            <EditableText categoryText={categoryText} />
+          </Col>
+        </Row>
+      </main>
+    </FieldsContextProvider>
       <footer>
         <Row>
           <Col

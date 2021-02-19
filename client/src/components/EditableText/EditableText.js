@@ -36,7 +36,7 @@ const EditableText = (props) => {
           className="textArea"
           id="editableTextArea"
           type="textarea"
-          style={{ height: "35vh" }}
+          style={{ height: "50vh" }}
           value={proOptions[props.categoryText]}
           placeholder="We help you get it right"
         />
@@ -56,7 +56,7 @@ const EditableText = (props) => {
         </CopyToClipboard>
         <Button
           style={{
-            marginLeft: "10px",
+            marginLeft: "15px",
             marginTop: "10px",
             backgroundColor: "#ee6f57",
             borderColor: "#ee6f57",
@@ -83,9 +83,18 @@ const EditableText = (props) => {
           size="sm"
         >
           Clear
-        </Button>{" "}
-        <div>
-          <h3></h3>
+          </Button>{" "}
+          <Button id='clearButton'
+          onClick={this.clearWasClicked.bind(this)}
+            style={{ float: "right", marginLeft: "10px", marginTop: "10px", backgroundColor: "#ee6f57", borderColor: "#ee6f57", color: "#f6f5f5" }}
+            variant="primary"
+            size="sm"
+          >
+          Copy to Favorites
+          </Button>{" "}
+          <div>
+            <h3></h3>
+          </div>
         </div>
       </div>
     </Form>

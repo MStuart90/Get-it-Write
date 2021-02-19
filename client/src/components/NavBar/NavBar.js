@@ -16,12 +16,14 @@ const Example = (props) => {
       <NavbarBrand href="/" className="mr-auto"><img src={logo} alt="Logo" id='logo' /></NavbarBrand>
           <Nav navbar>
             <NavItem>
-              <LogInModal buttonLabel={'Log In'}/>
+            <div style={{ float:'right' }}>
+            <LogInModal buttonLabel={'Log In'}/>
+            </div>
               <SignUpModal  buttonLabel={'Sign Up'}/>
 
             </NavItem>
             {/* <Button style={{ marginTop: "10px" }}> */}
-            <SignUpModal buttonLabel={'Sign Up'}/>
+            {/* <SignUpModal buttonLabel={'Sign Up'}/> */}
             {/* </Button> */}
             <NavItem>
             </NavItem>
