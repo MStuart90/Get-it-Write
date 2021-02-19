@@ -30,7 +30,6 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
   const [isOpen6, setIsOpen6] = useState(false);
   const [isOpen7, setIsOpen7] = useState(false);
   const [isOpen8, setIsOpen8] = useState(false);
-  const [isOpen9, setIsOpen9] = useState(false);
 
   // initial toggle controllers for the two main category menus
   const toggle1 = () => setIsOpen1(!isOpen1);
@@ -61,22 +60,14 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
         setIsOpen6(true);
         setIsOpen7(false);
         setIsOpen8(false);
-        setIsOpen9(false);
       } else if (props.target.id.endsWith("2")) {
         setIsOpen6(false);
         setIsOpen7(true);
         setIsOpen8(false);
-        setIsOpen9(false);
       } else if (props.target.id.endsWith("3")) {
         setIsOpen6(false);
         setIsOpen7(false);
         setIsOpen8(true);
-        setIsOpen9(false);
-      } else if (props.target.id.endsWith("4")) {
-        setIsOpen6(false);
-        setIsOpen7(false);
-        setIsOpen8(false);
-        setIsOpen9(true);
       }
     }
 
@@ -218,11 +209,17 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
                                 <option value="proOption2-default" id="default">
                                   Select
                                 </option>
-                                <option value="proOption2-1">Text 1</option>
-                                <option value="proOption2-2">Text 2</option>
-                                <option value="proOption2-3">Text 3</option>
-                                <option value="proOption2-4">Text 4</option>
-                                <option value="proOption2-5">Text 5</option>
+                                <option value="proOption2-1">
+                                  I'm not available
+                                </option>
+                                <option value="proOption2-2">
+                                  I'll get back to you
+                                </option>
+                                <option value="proOption2-3">Thank you</option>
+                                <option value="proOption2-4">
+                                  Setup Meeting
+                                </option>
+                                <option value="proOption2-5">Sick Day</option>
                               </Input>
                             </FormGroup>
                           </Collapse>
@@ -236,7 +233,7 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
                               onClick={toggle3}
                               id="professionalCategory3"
                             />{" "}
-                            Voicemail Scripts
+                            Students
                           </Label>
                           <Collapse isOpen={isOpen5}>
                             <FormGroup>
@@ -251,19 +248,16 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
                                   Select
                                 </option>
                                 <option value="proOption3-1">
-                                  Voicemail 1
+                                  Assignment Extension
                                 </option>
                                 <option value="proOption3-2">
-                                  Voicemail 2
+                                  Office Hours
                                 </option>
                                 <option value="proOption3-3">
-                                  Voicemail 3
+                                  Absence Request
                                 </option>
                                 <option value="proOption3-4">
-                                  Voicemail 4
-                                </option>
-                                <option value="proOption3-5">
-                                  Voicemail 5
+                                  Question About...
                                 </option>
                               </Input>
                             </FormGroup>
@@ -330,11 +324,18 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
                                 >
                                   Select
                                 </option>
-                                <option value="casualOption1-1">Email 1</option>
-                                <option value="casualOption1-2">Email 2</option>
-                                <option value="casualOption1-3">Email 3</option>
-                                <option value="casualOption1-4">Email 4</option>
-                                <option value="casualOption1-5">Email 5</option>
+                                <option value="casualOption1-1">
+                                  Thanks for the reply
+                                </option>
+                                <option value="casualOption1-2">
+                                  Long time no see
+                                </option>
+                                <option value="casualOption1-3">
+                                  How are you?
+                                </option>
+                                <option value="casualOption1-4">
+                                  Check your phone
+                                </option>
                               </Input>
                             </FormGroup>
                           </Collapse>
@@ -365,15 +366,26 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
                                 >
                                   Select
                                 </option>
-                                <option value="casualOption2-1">Txt 1</option>
-                                <option value="casualOption2-2">Txt 2</option>
-                                <option value="casualOption2-3">Txt 3</option>
-                                <option value="casualOption2-4">Txt 4</option>
-                                <option value="casualOption2-5">Txt 5</option>
+                                <option value="casualOption2-1">
+                                  Can't make it
+                                </option>
+                                <option value="casualOption2-2">
+                                  I'm down!
+                                </option>
+                                <option value="casualOption2-3">
+                                  Weekend Plans
+                                </option>
+                                <option value="casualOption2-4">
+                                  You're awesome
+                                </option>
+                                <option value="casualOption2-5">
+                                  Check this out L0L
+                                </option>
                               </Input>
                             </FormGroup>
                           </Collapse>
                         </FormGroup>
+
                         <FormGroup check>
                           <Label check>
                             {/*-----------  casualCategory3 -----------*/}
@@ -383,7 +395,7 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
                               onClick={toggle3}
                               id="casualCategory3"
                             />{" "}
-                            Voicemail Scripts
+                            Misc.
                           </Label>
                           <Collapse isOpen={isOpen8}>
                             <FormGroup>
@@ -400,46 +412,16 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
                                 >
                                   Select
                                 </option>
-                                <option value="casualOption3-1">VM 1</option>
-                                <option value="casualOption3-2">VM 2</option>
-                                <option value="casualOption3-3">VM 3</option>
-                                <option value="casualOption3-4">VM 4</option>
-                                <option value="casualOption3-5">VM 5</option>
-                              </Input>
-                            </FormGroup>
-                          </Collapse>
-                        </FormGroup>
-                        <FormGroup check>
-                          <Label check>
-                            {/*-----------  casualCategory4 -----------*/}
-                            <Input
-                              type="radio"
-                              name="radio1"
-                              onClick={toggle3}
-                              id="casualCategory4"
-                            />{" "}
-                            Misc.
-                          </Label>
-                          <Collapse isOpen={isOpen9}>
-                            <FormGroup>
-                              {/*______  casualSubCategory4 ______*/}
-                              <Input
-                                type="select"
-                                name="select"
-                                id="casualSubCategory4"
-                                onChange={selected}
-                              >
-                                <option
-                                  value="casualOption4-default"
-                                  id="default"
-                                >
-                                  Select
+                                <option value="casualOption3-1">
+                                  New phone, who dis?
                                 </option>
-                                <option value="casualOption4-1">Misc 1</option>
-                                <option value="casualOption4-2">Misc 2</option>
-                                <option value="casualOption4-3">Misc 3</option>
-                                <option value="casualOption4-4">Misc 4</option>
-                                <option value="casualOption4-5">Misc 5</option>
+                                <option value="casualOption3-2">
+                                  Rick Rolled
+                                </option>
+                                <option value="casualOption3-3">Angry</option>
+                                <option value="casualOption3-4">
+                                  Happy Birthday
+                                </option>
                               </Input>
                             </FormGroup>
                           </Collapse>
@@ -490,7 +472,6 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
               setIsOpen6(false);
               setIsOpen7(false);
               setIsOpen8(false);
-              setIsOpen9(false);
 
               // reset clicked radio buttons to empty
               let radioElement = document.getElementsByName("radio1");
