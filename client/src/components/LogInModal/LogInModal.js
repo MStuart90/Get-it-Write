@@ -1,4 +1,4 @@
-import React, {setState, useState, state} from 'react';
+import React, { useState} from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import axios from 'axios';
 import "./LogInModal.css"
@@ -11,6 +11,7 @@ const LogInModal = (props) => {
   } = props;
  
   const [modal, setModal] = useState(false);
+  const [loggedIn, setloggedIn] = useState(false);
 
   const toggle = () => setModal(!modal);
   const [state, setState] = useState({
@@ -34,13 +35,29 @@ const LogInModal = (props) => {
 const submitForm = (e) => {
     e.preventDefault()
     let logIn= { password: state.password, email: state.email,}
+    setloggedIn(true)
     console.log(logIn)
     axios.post("api/auth", logIn).then(res => {
      console.log(res)
 })}
+
+console.log('are they logged in ', loggedIn)
   return (
     <div>
-      <Button style={{ marginTop: "10px", backgroundColor: "#ee6f57", borderColor: "#ee6f57", color: "#f6f5f5" }} variant="primary" size="sm" onClick={toggle}>{buttonLabel}</Button>
+      {loggedIn ? <Button style={{
+                  marginTop: "10px",
+                  marginRight: "10px",
+                  backgroundColor: "#ee6f57",
+                  borderColor: "#ee6f57",
+                  color: "#f6f5f5",
+                }}
+                type="submit"
+                value="Submit"
+                onClick={toggle}
+              >
+                {" "}
+                Logout</Button> : <Button style={{ marginTop: "10px", backgroundColor: "#ee6f57", borderColor: "#ee6f57", color: "#f6f5f5" }} variant="primary" size="sm" onClick={toggle}>{buttonLabel}</Button>}
+      
       <Modal isOpen={modal} toggle={toggle} className={className}>
         <ModalHeader toggle={toggle}>Log In</ModalHeader>
         <div className="modalForm" >
@@ -78,6 +95,8 @@ const submitForm = (e) => {
               >
                 {" "}
                 Submit{" "}
+                
+                
               </Button>
         <Button style={{ marginTop: "10px", backgroundColor: "#ee6f57", borderColor: "#ee6f57", color: "#f6f5f5" }} onClick={toggle}>Cancel</Button>
         {/* <input type="cancel" Value="cancel" /> */}
