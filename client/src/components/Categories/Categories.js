@@ -492,6 +492,11 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
           >
             Reset Selections
           </Button>
+          <Button
+            style={{ marginTop: "10px", backgroundColor: "#ee6f57", borderColor: "#ee6f57", color: "#f6f5f5", float: "right" }} variant="primary" size="sm"
+          >
+            My Favorites
+          </Button>
         </Container>
       </CardBody>
     </div>
