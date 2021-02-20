@@ -33,7 +33,7 @@ const App = () => {
   }, [selectedCategory]);
 
   return (
-    <div>
+    <div className="contentWrapper">
       <header className="header">
         <Row>
           <Col lg="12" className="navBar gradientStyle">
@@ -81,15 +81,11 @@ const App = () => {
       </FieldsContextProvider>
       <footer>
         <Row>
-<<<<<<< HEAD
-          <Col style={{ height: "100%", width: "100%"}} lg="12" className=" gradientStyle footer">
-=======
           <Col
             style={{ height: "100%", width: "100%" }}
             lg="12"
             className=" gradientStyle footer"
           >
->>>>>>> ae9479bda1511ab2403035dd1c1769e9d6b76f76
             <Footer />
           </Col>
         </Row>

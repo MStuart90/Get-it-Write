@@ -20,5 +20,6 @@ p {
   /* For mobile phones: */
   .footer {
     position: sticky;
+    width: 100%;
   }
 }
