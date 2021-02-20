@@ -19,16 +19,16 @@ const SignUpModal = (props) => {
 
   const handleEmailChange = (e) => {
      
-      setState({email:e.target.value})
+      setState({...state, email:e.target.value})
       
   }
   const handlePasswordChange = (e) => {
     
-    setState({password:e.target.value})
+    setState({...state, password:e.target.value})
 }
 const handleUsernameChange = (e) => {
     
-    setState({username:e.target.value})
+    setState({...state, username:e.target.value})
 }
 const submitForm = (e) => {
     e.preventDefault()
