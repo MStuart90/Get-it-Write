@@ -29,13 +29,15 @@ const Footer = (props) => {
 
   return (
     <div>
-      <Row >
-          <Col style={{ paddingLeft: "35px", marginTop:'10px'}} sm="6">
-          <div class="addthis_inline_share_toolbox"></div>
-          </Col>
-          <Col style={{ paddingBottom: "0px"}} sm="6">
+        <Row>
+          <Col style={{ paddingLeft: "35px", paddingBottom: "0px", paddingTop: "10px"}} sm="12" lg="6">
           <div>
-        <p onMouseEnter={toggle} style={{ marginBottom: '1rem' }}>Developers</p>
+          <p>© 2021 Get it Write. All Rights Reserved</p>
+          </div> 
+          </Col>
+          <Col style={{ paddingLeft: "35px", paddingBottom: "30px", paddingTop:"10px"}} sm="12" lg="6">
+          <div style={{ marginBottom: '10px'}}>
+        <p onMouseEnter={toggle} style={{ marginBottom: '20px', alignContent: "right"}}>Developers</p>
         <Collapse
             isOpen={collapse}
             onEntering={onEntering}
@@ -122,14 +124,6 @@ const Footer = (props) => {
             </div>
           </Collapse>
         </div>
-          </Col>
-        </Row>
-        <Row>
-          <Col style={{ paddingLeft: "35px", paddingBottom: "0px"}} sm="12">
-          <div className="footer">
-
-          <p>© 2021 Get it Write. All Rights Reserved</p>
-          </div> 
           </Col>
         </Row>
       </div>

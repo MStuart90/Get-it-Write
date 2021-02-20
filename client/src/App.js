@@ -33,10 +33,10 @@ const App = () => {
   }, [selectedCategory]);
 
   return (
-    <div>
+    <div className="contentWrapper">
       <header className="header">
         <Row>
-          <Col lg="12" className="navBar">
+          <Col lg="12" className="navBar gradientStyle">
             <NavBar />
             {/* <LogInModal /> */}
           </Col>
@@ -45,8 +45,7 @@ const App = () => {
       <FieldsContextProvider>
         <main>
           <Row
-            style={{ height: "100%", backgroundColor: "#f6f5f5" }}
-            className="rows"
+            style={{ minHeight: 'calc(100vh - 199px)', backgroundColor: "#f6f5f5" }}
           >
             <Col
               lg="6"
@@ -82,7 +81,6 @@ const App = () => {
       <footer>
         <Row>
           <Col
-            style={{ height: "100%", width: "100%" }}
             lg="12"
             className=" gradientStyle footer"
           >
