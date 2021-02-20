@@ -1,5 +1,5 @@
 import React, {setState, useState, state} from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody} from 'reactstrap';
 import axios from 'axios';
 import "../LogInModal/LogInModal.css"
 
@@ -81,10 +81,6 @@ const submitForm = (e) => {
       </form>
         </ModalBody>
         </div>
-        {/* <ModalFooter>
-          <Button style={{ marginTop: "10px", backgroundColor: "#ee6f57", borderColor: "#ee6f57", color: "#f6f5f5" }} onClick={toggle}>Submit</Button>{' '}
-          
-        </ModalFooter> */}
       </Modal>
     </div>
   );
