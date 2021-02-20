@@ -33,8 +33,9 @@ const handleUsernameChange = (e) => {
 const submitForm = (e) => {
     e.preventDefault()
     let signUp= { password: state.password, username: state.username, email: state.email}
-    
+    console.log(signUp)
     axios.post("api/signup", signUp).then(res => {console.log(res)})
+    
 }
   return (
     <div>
@@ -60,15 +61,30 @@ const submitForm = (e) => {
         <label for="examplePassword" sm={2}>Password</label>
        
           <input type="password" onChange={handlePasswordChange} value={state.password} name="password" id="examplePassword" placeholder="password" />
-        {/* <input type="submit" value="Submit" /> */}
+          <Button
+                style={{
+                  marginTop: "10px",
+                  marginRight: "10px",
+                  backgroundColor: "#ee6f57",
+                  borderColor: "#ee6f57",
+                  color: "#f6f5f5",
+                }}
+                type="submit"
+                value="Submit"
+                onClick={toggle}
+              >
+                {" "}
+                Submit{" "}
+              </Button>
+              <Button style={{ marginTop: "10px", backgroundColor: "#ee6f57", borderColor: "#ee6f57", color: "#f6f5f5" }} onClick={toggle}>Cancel</Button>
       
       </form>
         </ModalBody>
         </div>
-        <ModalFooter>
+        {/* <ModalFooter>
           <Button style={{ marginTop: "10px", backgroundColor: "#ee6f57", borderColor: "#ee6f57", color: "#f6f5f5" }} onClick={toggle}>Submit</Button>{' '}
-          <Button style={{ marginTop: "10px", backgroundColor: "#ee6f57", borderColor: "#ee6f57", color: "#f6f5f5" }} onClick={toggle}>Cancel</Button>
-        </ModalFooter>
+          
+        </ModalFooter> */}
       </Modal>
     </div>
   );
