@@ -6,7 +6,6 @@ import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import Categories from "./components/Categories/Categories";
 import Fields from "./components/Fields/Fields";
-// import LogInModal from "./components/LogInModal/LogInModal";
 import { FieldsContext } from "./contexts/fieldsContext";
 import FieldsContextProvider from "./contexts/fieldsContext";
 
@@ -19,7 +18,6 @@ const App = () => {
     if (selectedCategory === null) {
       return;
     } else {
-      // console.log("editableTxt reading category: ", selectedCategory);
       let editableTxt = selectedCategory;
       let searchNumber =
         editableTxt.charAt(editableTxt.length - 2) +
@@ -38,7 +36,6 @@ const App = () => {
         <Row>
           <Col lg="12" className="navBar gradientStyle">
             <NavBar />
-            {/* <LogInModal /> */}
           </Col>
         </Row>
       </header>

@@ -28,9 +28,6 @@ const LogInModal = (props) => {
     
     setState({...state, password:e.target.value})
 }
-// const changeHandler = e => {
-//   setAllValues({...allValues, [e.target.name]: e.target.value}) 
-// }
 
 const submitForm = (e) => {
     e.preventDefault()
@@ -64,14 +61,6 @@ console.log('are they logged in ', loggedIn)
           
         <ModalBody>
         <form onSubmit={submitForm}>
-
-
-        {/* Log in with username? 
-        <label for="username" sm={2}>Username</label>
-     
-     <input type="text" onChange={handleUsernameChange} value={state.username} name="username" id="username" placeholder="username" />
-   */}
-     {/* Log in with email?  */}
         <label for="exampleEmail" sm={2}>Email</label>
      
           <input type="email" onChange={handleEmailChange}  name="email" id="exampleEmail" placeholder="email" />
