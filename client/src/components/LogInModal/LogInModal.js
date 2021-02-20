@@ -14,29 +14,33 @@ const LogInModal = (props) => {
 
   const toggle = () => setModal(!modal);
   const [state, setState] = useState({
-      email: "", password: "", username: ""
+      email: "", password: ""
+      
   });
 
   const handleEmailChange = (e) => {
-     
-      setState({email:e.target.value})
+     console.log(e.target.value)
+      setState({...state, email:e.target.value})
       
   }
   const handlePasswordChange = (e) => {
     
-    setState({password:e.target.value})
+    setState({...state, password:e.target.value})
 }
-const handleUsernameChange = (e) => {
-    
-    setState({username:e.target.value})
-}
+// const changeHandler = e => {
+//   setAllValues({...allValues, [e.target.name]: e.target.value}) 
+// }
+
 const submitForm = (e) => {
     e.preventDefault()
-    let logIn= { password: state.password, username: state.username, email: state.email}
+    let logIn= { password: state.password, email: state.email,}
+    console.log(logIn)
+    axios.post("api/auth", logIn).then(res => {
     
-    axios.post("api/auth", logIn).then(res => {axios.get("api/auth", res).then(userdata => {
-    console.log(userdata)
-    })})
+
+    }).catch(err => {
+      console.log(err)
+    })
     
 }
   return (
@@ -50,22 +54,22 @@ const submitForm = (e) => {
         <form onSubmit={submitForm}>
 
 
-        {/* Log in with username?  */}
+        {/* Log in with username? 
         <label for="username" sm={2}>Username</label>
      
      <input type="text" onChange={handleUsernameChange} value={state.username} name="username" id="username" placeholder="username" />
-  
+   */}
      {/* Log in with email?  */}
         <label for="exampleEmail" sm={2}>Email</label>
      
-          <input type="email" onChange={handleEmailChange} value={state.email} name="email" id="exampleEmail" placeholder="email" />
+          <input type="email" onChange={handleEmailChange}  name="email" id="exampleEmail" placeholder="email" />
        
     
     
         <label for="examplePassword" sm={2}>Password</label>
        
-          <input type="password" onChange={handlePasswordChange} value={state.password} name="password" id="examplePassword" placeholder="password" />
-        {/* <input type="submit" value="Submit" /> */}
+          <input type="password" onChange={handlePasswordChange}  name="password" id="examplePassword" placeholder="password" />
+        <input type="submit" value="Submit" />
       
       </form>
         </ModalBody>
