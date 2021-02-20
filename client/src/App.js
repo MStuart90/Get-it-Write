@@ -45,8 +45,7 @@ const App = () => {
       <FieldsContextProvider>
         <main>
           <Row
-            style={{ height: "100%", backgroundColor: "#f6f5f5" }}
-            className="rows"
+            style={{ minHeight: 'calc(100vh - 199px)', backgroundColor: "#f6f5f5" }}
           >
             <Col
               lg="6"

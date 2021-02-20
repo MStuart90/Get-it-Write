@@ -1,6 +1,3 @@
-.rows{
-  background-color: grey;
-}
 
 .columns{
   /* border: 1px solid rgb(95, 95, 95); */
@@ -56,13 +53,14 @@
   padding-right: 0px;
 }
 
-/* main{
-  height: calc(100vh - 100px);
-} */
+main{
+  min-height: calc(100vh - 199px);
+  background-color: #f6f5f5;
+}
 
 html {
   overflow-x: hidden; 
-  /* overflow-y: hidden;  */
+  height: 100%; 
 }
 .gradientStyle {
   background-image: linear-gradient(to bottom right ,#145374, #00334e);
