@@ -43,7 +43,7 @@ const App = () => {
     <div>
       <header className="header">
         <Row>
-          <Col lg="12" className="navBar">
+          <Col lg="12" className="navBar gradientStyle">
             <NavBar />
             {/* <LogInModal /> */}
           </Col>
@@ -80,7 +80,7 @@ const App = () => {
       </main>
       <footer>
         <Row>
-          <Col  style={{ height: "100%", width: "100%"}} lg="12" className=" gradientStyle footer">
+          <Col style={{ height: "100%", width: "100%"}} lg="12" className=" gradientStyle footer">
             <Footer />
           </Col>
         </Row>
