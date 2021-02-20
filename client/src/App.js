@@ -81,7 +81,6 @@ const App = () => {
       <footer>
         <Row>
           <Col
-            style={{ height: "100%", width: "100%" }}
             lg="12"
             className=" gradientStyle footer"
           >
