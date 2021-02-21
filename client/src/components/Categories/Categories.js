@@ -432,8 +432,9 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
               </Collapse>
             </Col>
           </Row>
+          < MyFaveModal />
           <Button
-            style={{ marginTop: "10px", backgroundColor: "#ee6f57", borderColor: "#ee6f57", color: "#f6f5f5" }} variant="primary" size="sm"
+            style={{ marginTop: "0px", backgroundColor: "#ee6f57", borderColor: "#ee6f57", color: "#f6f5f5" }} variant="primary" size="sm"
             onClick={() => {
               // reset casual categories
               document
@@ -482,7 +483,7 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
             Reset Selections
           </Button>
           
-          < MyFaveModal />
+          
           {/* <Button
             style={{ marginTop: "10px", backgroundColor: "#ee6f57", borderColor: "#ee6f57", color: "#f6f5f5", float: "right" }} variant="primary" size="sm"
           >
