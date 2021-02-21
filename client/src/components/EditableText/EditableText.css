@@ -37,7 +37,7 @@
     outline: rgb(52, 79, 113) none 0px;
     overflow: hidden;
     padding: 0px 0px 4px;
-}/*#H2_1*/
+}
 
 #H2_1:after {
     border-block-end-color: rgb(52, 79, 113);
@@ -56,7 +56,7 @@
     border: 0px none rgb(52, 79, 113);
     font: 600 12.8px / 16px "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sansSerif;
     outline: rgb(52, 79, 113) none 0px;
-}/*#H2_1:after*/
+}
 
 #H2_1:before {
     border-block-end-color: rgb(52, 79, 113);
@@ -75,7 +75,7 @@
     border: 0px none rgb(52, 79, 113);
     font: 600 12.8px / 16px "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sansSerif;
     outline: rgb(52, 79, 113) none 0px;
-}/*#H2_1:before*/
+}
 
 #SPAN_2 {
     border-block-end-color: rgb(52, 79, 113);
@@ -98,7 +98,7 @@
     font: 600 12.8px / 16px "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sansSerif;
     outline: rgb(52, 79, 113) none 0px;
     overflow: hidden;
-}/*#SPAN_2*/
+}
 
 #SPAN_2:after {
     border-block-end-color: rgb(52, 79, 113);
@@ -117,7 +117,7 @@
     border: 0px none rgb(52, 79, 113);
     font: 600 12.8px / 16px "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sansSerif;
     outline: rgb(52, 79, 113) none 0px;
-}/*#SPAN_2:after*/
+}
 
 #SPAN_2:before {
     border-block-end-color: rgb(52, 79, 113);
@@ -136,22 +136,6 @@
     border: 0px none rgb(52, 79, 113);
     font: 600 12.8px / 16px "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sansSerif;
     outline: rgb(52, 79, 113) none 0px;
-}/*#SPAN_2:before*/
-
-/* .editText{
-height: min 440px;
-/* margin-left: 20px; */
-/* } */ 
-
-/* #editableText{
-    height: min 440px;
-    padding: 30px;
-    margin-left: 20px; 
-} */
-
-/* .textArea{
-    width: 100%;
-    height: 90%;
-} */
+}
 
 

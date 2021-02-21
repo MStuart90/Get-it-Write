@@ -4,7 +4,7 @@
 
   ![License](https://img.shields.io/badge/License--blue.svg "License Badge")
   
-
+![get_it_write](https://user-images.githubusercontent.com/68473729/108634049-bd27ce00-7445-11eb-8963-c43735fc8df8.png)
 
     # Table of Contents
 
@@ -45,13 +45,19 @@
     
 
 ## Questions:
-For questions about Node File Generator, visit my GitHub page:
+For questions about Get it Write, visit my GitHub page:
     https://github.com/MStuart90/Get-it-Write
 
 ## Demonstration:
+![get_it_write](https://user-images.githubusercontent.com/68473729/108634266-d5e4b380-7446-11eb-9f2c-92ab862f643c.gif)
+
   
-  ## You may also contact me via email at:
-  
+  ## You may also visit our Github pages at:
+  Maria Byler-https://github.com/mariabyler
+  Rachel Moore-https://github.com/Rachelmoore2020
+  Gene Duncan-https://github.com/duncangw1
+  Melanie Stuart-https://github.com/MStuart90
+  Mike Hill-https://github.com/DigitalAmnesia
   
   ## License:
   Click on the link to find information about the license
