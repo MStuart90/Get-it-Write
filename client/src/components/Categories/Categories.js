@@ -15,6 +15,9 @@ import {
   Col,
 } from "reactstrap";
 
+import MyFaveModal from "../MyFaveModal/MyFaveModal";
+
+
 const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
   // setting states for the two main toggle menus and a state to track the user's selected category
   const [isOpen1, setIsOpen1] = useState(false);
@@ -437,15 +440,11 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
               </Collapse>
             </Col>
           </Row>
+          < MyFaveModal />
           <Button
-            style={{
-              marginTop: "10px",
-              backgroundColor: "#ee6f57",
-              borderColor: "#ee6f57",
-              color: "#f6f5f5",
-            }}
-            variant="primary"
-            size="sm"
+
+            style={{ marginTop: "0px", backgroundColor: "#ee6f57", borderColor: "#ee6f57", color: "#f6f5f5" }} variant="primary" size="sm"
+
             onClick={() => {
               // reset casual categories
               document
@@ -492,11 +491,15 @@ const Categories = ({ setSelectedCategoryInApp, setFadeInApp }) => {
           >
             Reset Selections
           </Button>
-          <Button
+          
+          
+          {/* <Button
             style={{ marginTop: "10px", backgroundColor: "#ee6f57", borderColor: "#ee6f57", color: "#f6f5f5", float: "right" }} variant="primary" size="sm"
           >
             My Favorites
-          </Button>
+          </Button> */}
+        
+          
         </Container>
       </CardBody>
     </div>
