@@ -40,10 +40,7 @@
 
 ## What command should be run to run tests?
     none
-
-## What license is the application covered under?
     
-
 ## Questions:
 For questions about Get it Write, visit my GitHub page:
     https://github.com/MStuart90/Get-it-Write
@@ -53,11 +50,11 @@ For questions about Get it Write, visit my GitHub page:
 
   
   ## You may also visit our Github pages at:
-  Maria Byler-https://github.com/mariabyler
-  Rachel Moore-https://github.com/Rachelmoore2020
-  Gene Duncan-https://github.com/duncangw1
-  Melanie Stuart-https://github.com/MStuart90
-  Mike Hill-https://github.com/DigitalAmnesia
+  *Maria Byler-https://github.com/mariabyler
+  *Rachel Moore-https://github.com/Rachelmoore2020
+  *Gene Duncan-https://github.com/duncangw1
+  *Melanie Stuart-https://github.com/MStuart90
+  *Mike Hill-https://github.com/DigitalAmnesia
   
   ## License:
   Click on the link to find information about the license
